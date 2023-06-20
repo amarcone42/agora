@@ -4,24 +4,41 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --neutral-color:#FFFFFF;
+  --neutral-color-dark: #FAFAFA;
+  --secondary-color: #EBEBEB;
+  --foreground-color: #333234;
+  --accent-color: #FFDE18;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
+    --background-rgb: 0, 0, 0;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+
+    --neutral-color:#1F1E1F;
+    --neutral-color-dark: #242324;
+    --secondary-color: #262627;
+    --foreground-color: #FFFFFF;
+    --accent-color: #FFDE18;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb)); */
+
+  color: var(--foreground-color);
+  background: var(--neutral-color);
+
+  
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: bold;
 }
