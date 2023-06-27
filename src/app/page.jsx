@@ -1,19 +1,18 @@
 import Image from 'next/image'
-import Card from '../components/card/Card'
+import Post from '../components/post/Post'
 
 
 export default function Home() {
   return (
     <main>
       <div id="content-panel" className='panel'>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
+        <Post></Post>
+        <Post></Post>
+        <Post></Post>
+        <Post></Post>
+        <Post></Post>
+        <Post></Post>
+        <Post></Post>
       </div>
     </main>
   )
