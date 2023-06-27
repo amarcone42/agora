@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -31,13 +29,14 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
+
   /* color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb)); */
 
-  color: var(--foreground-color);
-  background: var(--neutral-color);
-
-  
+  /* color: var(--foreground-color);
+  background: var(--neutral-color); */
 }
 h1,h2,h3,h4,h5,h6 {
   font-weight: bold;
