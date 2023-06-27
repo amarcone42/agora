@@ -1,6 +1,8 @@
-import { Button, Card } from "../../lib/mui"
+import { Card } from "../../lib/mui"
 import React from "react"
 import './post.scss'
+import {Button} from "../../lib/materialbutton"
+
 
 const Post = () => {
     return (
@@ -21,7 +23,7 @@ const Post = () => {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique eleifend quam a efficitur. Cras aliquet magna vitae lectus ultricies laoreet. Nulla gravida turpis vitae accumsan sodales.</p>
             </div>
             <div className='interactions'>
-                <Button variant="contained" color="primary">Hello, friend</Button>
+                <Button variant="filled" color="primary">Hello, friend</Button>
             </div>
         </Card>
     )
