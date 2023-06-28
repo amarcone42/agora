@@ -1,8 +1,9 @@
 import './globals.css'
 import './home.scss'
 import { Open_Sans } from 'next/font/google'
-import Header from '../components/header/Header'
+import MainPanel from '../components/mainpanel/MainPanel'
 import Footer from '../components/footer/Footer'
+
 
 const font = Open_Sans({ subsets: ['latin'] })
 
@@ -18,7 +19,7 @@ export default function RootLayout({ children }) {
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
       </head>
       <body className={font.className}>
-        <Header name="Home"/>
+        <MainPanel name="Home"/>
         {children}
         <Footer/>
       </body>

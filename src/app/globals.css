@@ -31,12 +31,17 @@
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+@media (width > 600px) {
+  body {
+    flex-direction: row;
+  }
 
-  /* color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb)); */
-
-  /* color: var(--foreground-color);
-  background: var(--neutral-color); */
+  main {
+    margin-bottom: 0 !important;
+  }
 }
 h1,h2,h3,h4,h5,h6 {
   font-weight: bold;
