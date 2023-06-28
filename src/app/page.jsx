@@ -1,10 +1,11 @@
-import Image from 'next/image'
 import Post from '../components/post/Post'
+import SimpleAppBar from '../components/simpleappbar/SimpleAppBar'
 
 
 export default function Home() {
   return (
     <main>
+      <SimpleAppBar name="Home"></SimpleAppBar>
       <div id="content-panel" className='panel'>
         <Post></Post>
         <Post></Post>
@@ -13,20 +14,6 @@ export default function Home() {
         <Post></Post>
         <Post></Post>
         <Post></Post>
-      </div>
-    </main>
-  )
-}
-
-function Explore() {
-  return (
-    <main>
-      <Header name="Esplora"/>
-      <div id="content-panel" className='panel'>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
       </div>
     </main>
   )
