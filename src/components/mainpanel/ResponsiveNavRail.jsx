@@ -88,7 +88,7 @@ export default function ResponsiveNavRail() {
         open="true"
       >
         <DrawerHeader>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} className='panel-name'>
                 Agorà
             </Typography>
         </DrawerHeader>

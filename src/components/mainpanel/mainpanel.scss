@@ -11,9 +11,19 @@
     display: none;
     width: var(--navrail-small);
     div {
-        width: var(--navrail-small) !important;
         color: var(--foreground-color)!important;
         background-color: var(--neutral-color)!important;
+    }
+    > div {
+        width: var(--navrail-small) !important;
+        border: 0;
+    }
+    .panel-name {
+        margin-left: 15px;
+    }
+    hr {
+        margin: 5px 0;
+        border: 0;
     }
 }
 

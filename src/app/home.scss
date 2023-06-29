@@ -25,12 +25,16 @@ main {
     padding: 0;
     display: flex;
     flex-direction: column;
-    background: var(--secondary-color);
-    overflow-y: scroll;
+    background: var(--neutral-color);
+    overflow-y: hide;
     #content-panel {
-        margin: 20px;
+        margin: 0;
+        padding: 20px;
+        border-radius: 12px;
+        background: var(--secondary-color);
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow-y: scroll;
     }
 }
