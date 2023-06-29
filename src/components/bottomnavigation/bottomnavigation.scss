@@ -1,3 +1,10 @@
+//fissa il component nella parte bassa dello schermo
+.stickToBottom {
+  width: 100%;
+  position: fixed;
+  bottom: 0,
+}
+
 //scegli lo stile generale dell'icona
 .icon {
     color: var(--icon-color, #333234);
@@ -14,7 +21,7 @@
   .Mui-selected .MuiSvgIcon-root {
     color: var(--selected-color, #333234);
     background-color: var(--selected-bg-color, #FFDE18);
-    padding: 6px 12px;
+    padding: 4px 10px;
     border-radius: 25%;
   }
   

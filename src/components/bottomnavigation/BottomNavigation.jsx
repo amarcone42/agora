@@ -18,7 +18,7 @@ export default function SimpleBottomNavigation() {
   };
 
   return (
-    <Box>
+    <Box className="stickToBottom">
       <BottomNavigation
         showLabels={true}
         value={value}
