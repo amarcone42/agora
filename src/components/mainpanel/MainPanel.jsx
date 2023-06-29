@@ -2,13 +2,13 @@ import React from "react"
 import ResponsiveAppBar from './ResponsiveAppBar'
 import ResponsiveNavRail from "./ResponsiveNavRail"
 
-const MainPanel = ({name}) => {
+export default function MainPanel ({name}) {
   return (
     <div>
+      {/* Mobile app bar */}
       <ResponsiveAppBar name={name}></ResponsiveAppBar>
+      {/* Desktop navigation rail */}
       <ResponsiveNavRail name={name}></ResponsiveNavRail>
     </div>
   )
 }
-
-export default MainPanel

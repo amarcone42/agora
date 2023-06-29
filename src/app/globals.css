@@ -11,6 +11,10 @@
   --secondary-color: #EBEBEB;
   --foreground-color: #333234;
   --accent-color: #FFDE18;
+
+
+  --navrail-small: 64px;
+  --navrail-medium: 250px;
 }
 
 @media (prefers-color-scheme: dark) {
