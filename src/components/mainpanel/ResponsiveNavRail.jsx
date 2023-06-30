@@ -74,7 +74,7 @@ export default function ResponsiveNavRail() {
 
   return (
 
-      <Drawer className='navrail'
+      <Drawer id='navrail'
         sx={{
           width: drawerWidth,
           flexShrink: 0,
