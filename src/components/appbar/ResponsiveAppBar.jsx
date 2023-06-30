@@ -23,7 +23,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
-import './mainpanel.scss'
+import './appbar.scss'
 
 const drawerWidth = 240;
 const settings = ['Profilo utente', 'Crea gruppo', 'Impostazioni', 'Log out'];

@@ -1,4 +1,4 @@
-import ResponsiveAppBar from '../components/mainpanel/ResponsiveAppBar'
+import ResponsiveAppBar from '../components/appbar/ResponsiveAppBar'
 import Post from '../components/post/Post'
 
 
