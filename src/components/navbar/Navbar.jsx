@@ -7,7 +7,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import SearchIcon from '@mui/icons-material/Search';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import ChatIcon from '@mui/icons-material/Chat';
-import '../bottomnavigation/bottomnavigation.scss';
+import './navbar.scss';
 
 export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
@@ -19,7 +19,8 @@ export default function SimpleBottomNavigation() {
 
   return (
     <Box className="stickToBottom">
-      <BottomNavigation
+      <BottomNavigation id="topolino"
+        className="navbar"
         showLabels={true}
         value={value}
         onChange={(event, newValue) => {

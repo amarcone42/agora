@@ -34,3 +34,9 @@ main {
         align-items: center;
     }
 }
+
+@media (width > 600px) {
+    #bottomnavigation {
+        display: none !important;
+    }
+}
