@@ -2,7 +2,7 @@ import './globals.css'
 import './home.scss'
 import { Open_Sans } from 'next/font/google'
 import MainPanel from '../components/mainpanel/MainPanel'
-import Footer from '../components/footer/Footer'
+import ButtonCreate from '../components/buttoncreate/ButtonCreate'
 
 
 const font = Open_Sans({ subsets: ['latin'] })
@@ -20,8 +20,10 @@ export default function RootLayout({ children }) {
       </head>
       <body className={font.className}>
         <MainPanel name="Home"/>
-        {children}
-        <Footer/>
+        <div id="central-panel">
+          {children}
+          <ButtonCreate/>
+        </div>
       </body>
     </html>
   )

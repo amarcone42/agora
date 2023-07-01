@@ -1,0 +1,20 @@
+#fab-piccolo{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+#central-panel{
+
+    #fab-esteso{
+        display: none;
+    }
+}
+
+@media (width > 600px) {
+    #fab-piccolo{
+        display: none;
+    }
+    
+    
+}
