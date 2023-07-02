@@ -7,6 +7,7 @@
     background-color: var(--neutral-color)!important;
     .toolbar {
         margin-left: 0;
+        margin-right: 0;
     }
     .title {
         width: 100%;
@@ -28,7 +29,7 @@
             display: none;
         }
         #open-side-panel {
-            display: flex;
+            display: flex !important;
         }
     }
 }
@@ -36,6 +37,16 @@
     #responsive-header {
         .toolbar {
             margin-left: var(--navrail-medium) !important;
+        }
+    }
+}
+@media (width > 1200px) {
+    #responsive-header {
+        .toolbar {
+            margin-right: var(--navrail-medium) !important;
+        }
+        #open-side-panel {
+            display: none !important;
         }
     }
 }
