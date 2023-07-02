@@ -3,8 +3,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Fab from '@mui/material/Fab';
 import AddIcon from '@mui/icons-material/Add';
-import AddCircleIcon from '@mui/icons-material/AddCircle';
-import './ButtonCrate.scss';
+import './ButtonCreate.scss';
 
 export default function ButtonCreate() {
   return (
@@ -17,7 +16,7 @@ export default function ButtonCreate() {
 
       <Box sx={{ '& > :not(style)': { m: 1 } }}>
       <Fab id="fab-esteso" variant="extended" color="--accent-color" size="medium">
-              <AddCircleIcon sx={{ mr: 1 }} />
+              <AddIcon id="Add" sx={{ mr: 2 }} />
               Crea
           </Fab>
         </Box>
