@@ -1,52 +1,55 @@
-main {
-    overflow-y: scroll !important;
+#navrail {
+    display: none;
+    width: var(--navrail-small);
+    > div {
+        width: var(--navrail-small) !important;
+        border: 0;
+    }
 }
-.responsive-header {
-    height: 64px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: var(--foreground-color)!important;
-    background-color: var(--neutral-color)!important;
-
-    .navrail {
-        display: none;
-        div {
-            color: var(--foreground-color)!important;
-            background-color: var(--neutral-color)!important;
-        }
+#extra-panel {
+    display: none;
+    width: var(--navrail-medium);
+    > div {
+        width: var(--navrail-medium) !important;
+        border: 0;
     }
 }
 
-.navrail div {
-    color: var(--foreground-color)!important;
-    background-color: var(--neutral-color)!important;
+.side-panel {
+    width: var(--navrail-medium);
+    div {
+        color: var(--foreground-color)!important;
+        background-color: var(--neutral-color)!important;
+    }
+    .panel-name {
+        margin-left: 15px;
+    }
+    hr {
+        margin: 5px 0;
+        border: 0;
+    }
 }
 
-.simple-header {
-    position: fixed;
-    top: 0;
-    left: 240px;
-    right: 0px;
-    width: auto;
-    color: var(--foreground-color)!important;
-    background-color: var(--neutral-color)!important;
-
-    .drawer-header {
-        color: var(--foreground-color) !important;
-    }
+.css-1oqqzyl-MuiContainer-root {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 @media (width > 600px) {
-    .responsive-header {
-        display: none !important;
-    }
-    .navrail {
+    #navrail {
         display: flex;
     }
 }
-@media (width <= 600px) {
-    .simple-header {
-        display: none !important;
+@media (width > 900px) {
+    #navrail {
+        width: var(--navrail-medium) !important;
+        > div {
+            width: var(--navrail-medium) !important;
+        }
+    }
+}
+@media (width > 1200px) {
+    #extra-panel {
+        display: flex;
     }
 }
