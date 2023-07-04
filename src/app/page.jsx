@@ -17,6 +17,8 @@ export default function Home() {
         <Post></Post>
         <Post></Post>
       </div>
+      
+      
     </main>
   )
 }
