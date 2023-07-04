@@ -9,7 +9,7 @@ import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import ChatIcon from '@mui/icons-material/Chat';
 import './navbar.scss';
 
-export default function SimpleBottomNavigation() {
+export function Navbar() {
   const [value, setValue] = React.useState(0);
 
   //applica lo stile all'icona che viene passata nella funzione
@@ -18,8 +18,8 @@ export default function SimpleBottomNavigation() {
   };
 
   return (
-    <Box className="stickToBottom">
-      <BottomNavigation id="topolino"
+    <Box className="stickToBottom" >
+      <BottomNavigation id="bottomNavigation"
         className="navbar"
         showLabels={true}
         value={value}
@@ -33,5 +33,13 @@ export default function SimpleBottomNavigation() {
         <BottomNavigationAction label="Chat" icon={<CustomIcon nameIcon={ChatIcon} />} />
       </BottomNavigation>
     </Box>
+  );
+}
+
+export default function SimpleBottomNavigation() {
+  return(
+    <div className="stickToBottom">
+      <Navbar />
+    </div>
   );
 }

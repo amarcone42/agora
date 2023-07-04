@@ -1,45 +1,48 @@
+// Stile generale della bottomnavigation, valido anche per la versione desktop
+.navbar {
+
+  // Scegli il colore di default di sfondo della navbar
+  background-color: var(--neutral-color);
+
+  // Scegli lo stile generale dell'icona
+  .icon {
+    color: var(--icon-color, var(--foreground-color));
+    font-size: var(--icon-size, 24px);
+  }
+
+  // Scegli il colore di default delle label
+  .MuiBottomNavigationAction-label {
+    color: var(--foreground-color);
+  }
+  
+  //scegli lo stile degli elementi quando vengono selezionati
+  .Mui-selected {
+
+    // Scegli lo stile delle label quando vengono selezionate
+    font-weight: bold;
+    color: var(--selected-color, var(--foreground-color));
+
+    // Scegli lo stile delle icone, e dello sfondo delle icone quando vengono selezionate
+    .MuiSvgIcon-root {
+      color: var(--selected-color, var(--foreground-color));
+      background-color: var(--selected-bg-color, var(--accent-color));
+      padding: 4px 10px;
+      border-radius: 25%;
+    }
+  }
+  
+  // Scegli il colore del ripple touch
+  .MuiTouchRipple-child {
+    background-color: var(--foreground-color) !important;
+  }
+}
 
 //fissa il component nella parte bassa dello schermo
 .stickToBottom {
   width: 100%;
   position: fixed;
-  bottom: 0,
+  bottom: 0;
 }
-
-//scegli il colore di default delle label
-.MuiBottomNavigationAction-label {
-  color: var(--foreground-color);
-}
-
-//scegli lo stile generale dell'icona
-.icon {
-    color: var(--icon-color, var(--foreground-color));
-    font-size: var(--icon-size, 24px);
-  }
-
- //scegli lo stile delle label quando vengono selezionate
- .Mui-selected{
-    font-weight: bold;
-    color: var(--selected-color, var(--foreground-color));
-  }
-  
-  //scegli lo stile delle icone, e dello sfondo delle icone quando vengono selezionate
-  .Mui-selected .MuiSvgIcon-root {
-    color: var(--selected-color, var(--foreground-color));
-    background-color: var(--selected-bg-color,  var(--accent-color));
-    padding: 4px 10px;
-    border-radius: 25%;
-  }
-  
-  //scegli il colore del ripple touch
-  .MuiTouchRipple-child {
-    background-color: var(--foreground-color) !important;
-  }
-
-  //scegli il colore di default di sfondo della navbar
-  .navbar {
-    background-color: var(--neutral-color);
-  }
 
   @media (width > 600px) {
     .navbar {
