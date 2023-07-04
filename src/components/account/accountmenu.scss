@@ -1,0 +1,26 @@
+#account-menu {
+    background-color: var(--shadow);
+    .MuiPaper-root {
+        top: 0 !important;
+        filter: none;
+    }
+    .css-i986bg-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+        border-radius: var(--border-radius-md);
+        color: var(--foreground-color);
+        background-color: var(--neutral-color-dark);
+        filter: 0;
+    }
+    .username {
+        margin-right: 8px;
+    }
+    .profile-icon {
+        margin-right: 0;
+        margin-left: auto;
+    }
+    hr {
+        border-bottom-width: 0;
+    }
+    .icon {
+        color: var(--foreground-color);
+    }
+}
