@@ -22,13 +22,21 @@
     font-weight: bold;
     color: var(--selected-color, var(--foreground-color));
 
-    // Scegli lo stile delle icone, e dello sfondo delle icone quando vengono selezionate
+    // Scegli lo stile dello sfondo delle icone quando vengono selezionate
     .MuiSvgIcon-root {
-      color: var(--selected-color, var(--foreground-color));
       background-color: var(--selected-bg-color, var(--accent-color));
-      padding: 4px 10px;
       border-radius: 25%;
+      width: 30%;
+      height: 45%;
+      
+      
     }
+    
+    // Scegli lo stile delle icone quando vengono selezionate
+    .MuiSvgIcon-root > svg {
+      color: var(--selected-color, var(--foreground-color));
+    }
+    
   }
   
   // Scegli il colore del ripple touch
