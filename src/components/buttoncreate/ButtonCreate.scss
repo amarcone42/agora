@@ -1,0 +1,30 @@
+#fab-piccolo{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background: var(--accent-color);
+    color: var(--bianco);
+}
+
+#Add{
+    background: var(--bianco);
+    /* Aggiunta del background a forma di cerchio per AddIcon */
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-size: 10px;
+}
+
+#central-panel{
+
+    #fab-esteso{
+        display: none;
+        background: var(--accent-color);
+    }
+}
+
+@media (width > 600px) {
+    #fab-piccolo{
+        display: none;
+    }  
+}
