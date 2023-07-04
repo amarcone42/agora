@@ -17,6 +17,16 @@
     }
 }
 
+.icon {
+    color: var(--icon-color, var(--foreground-color));
+    font-size: var(--icon-size, 24px);
+  }
+ 
+  .button {
+    border-radius: 0; // Set border radius to 0 for square shape
+    padding: 0;
+  }
+
 @media (width > 600px) {
     #responsive-header {
         .toolbar {
@@ -32,6 +42,18 @@
             display: flex !important;
         }
     }
+
+
+    #temporarydrawer{
+        display: none;
+    }
+
+    #HamburgerIcon{
+        display: none;
+    }
+  
+  
+    
 }
 @media (width > 900px) {
     #responsive-header {
@@ -39,6 +61,8 @@
             margin-left: var(--navrail-medium) !important;
         }
     }
+
+    
 }
 @media (width > 1200px) {
     #responsive-header {
@@ -46,7 +70,9 @@
             margin-right: var(--navrail-medium) !important;
         }
         #open-side-panel {
-            display: none !important;
+            display: none;
         }
     }
+
+    
 }

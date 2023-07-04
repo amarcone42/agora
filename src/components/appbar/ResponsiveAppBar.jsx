@@ -24,6 +24,7 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import './appbar.scss'
+import TemporaryDrawer from '../temporarydrawer/TemporaryDrawer';
 
 const drawerWidth = 240;
 const settings = ['Profilo utente', 'Crea gruppo', 'Impostazioni', 'Log out'];
@@ -90,16 +91,23 @@ const ResponsiveAppBar = ({name}) => {
       <AppBar elevation={0} id='responsive-header'>
         <Container maxWidth="lg">
           <Toolbar disableGutters className='toolbar'>
-            <IconButton
-              id="left-panel-button"
-              size="large"
+           <TemporaryDrawer id="temporarydrawer"
+           size="large"
               edge="start"
               color="inherit"
               aria-label="menu"
-              sx={{ mr: 2 }}
+              
+              >
+            <IconButton 
+              size="large"//duplicato, dove devo metterlo?
+              edge="start"//in temporarydrawer o iconbutton?
+              color="inherit"//
+              aria-label="menu"//
+              
             >
-              <MenuIcon />
-            </IconButton>
+      <MenuIcon />
+    </IconButton>
+  </TemporaryDrawer>
             <Typography variant="h6" noWrap 
               className='title'
               component="div" 
@@ -115,7 +123,7 @@ const ResponsiveAppBar = ({name}) => {
               onClick={handleDrawerOpen}
               sx={{ ...(open && { display: 'none' }) }}
             >
-              <MenuIcon />
+              
             </IconButton>
             <Box id="user-account" sx={{ flexGrow: 0 }}>
               <Tooltip title="Open settings">
