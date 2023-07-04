@@ -11,6 +11,7 @@
   --secondary-color: #EBEBEB;
   --foreground-color: #333234;
   --accent-color: #FFDE18;
+  --bianco:#FFFFFF;
 }
 
 @media (prefers-color-scheme: dark) {

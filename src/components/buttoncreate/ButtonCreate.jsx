@@ -9,13 +9,13 @@ export default function ButtonCreate() {
   return (
     <>
      <Box sx={{ '& > :not(style)': { m: 1 } }}>
-          <Fab id="fab-piccolo" color="--accent-color" aria-label="add">
+          <Fab id="fab-piccolo" aria-label="add">
               <AddIcon />
           </Fab>
       </Box>
 
       <Box sx={{ '& > :not(style)': { m: 1 } }}>
-      <Fab id="fab-esteso" variant="extended" color="--accent-color" size="medium">
+      <Fab id="fab-esteso" variant="extended" size="medium">
               <AddIcon id="Add" sx={{ mr: 2 }} />
               Crea
           </Fab>
