@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         {children}
 
         {/*navbar Mobile in basso*/}
-        <SimpleBottomNavigation  id="paperino"/>
+        <SimpleBottomNavigation name="Navbar"/>
         
       </body>
     </html>

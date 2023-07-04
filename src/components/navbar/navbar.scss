@@ -41,5 +41,11 @@
     background-color: var(--neutral-color);
   }
 
+  @media (width > 600px) {
+    .navbar {
+        display: none !important;
+    }
+}
+  
 
   
