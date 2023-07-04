@@ -9,6 +9,11 @@
     color: var(--icon-color, var(--foreground-color));
     font-size: var(--icon-size, 24px);
   }
+ 
+  .button {
+      border-radius: 0; 
+      padding: 0;
+  }
 
   // Scegli il colore di default delle label
   .MuiBottomNavigationAction-label {
@@ -26,8 +31,8 @@
     .MuiSvgIcon-root {
       background-color: var(--selected-bg-color, var(--accent-color));
       border-radius: 25%;
-      width: 30%;
-      height: 45%;
+      width: 40%;
+      height: 50%;
       
       
     }

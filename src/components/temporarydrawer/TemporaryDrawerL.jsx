@@ -12,8 +12,9 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
+import './temporarydrawer.scss';
 
-export default function TemporaryDrawer() {
+export default function TemporaryDrawerLeft() {
   const [state, setState] = React.useState({
     left: false,
   });
@@ -27,7 +28,7 @@ export default function TemporaryDrawer() {
   };
 
   const list = (anchor) => (
-    <Box id="temporarydrawer"
+    <Box id="temporarydrawerleft"
       sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
@@ -65,12 +66,12 @@ export default function TemporaryDrawer() {
     <div>
       {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button id="HamburgerIcon" onClick={toggleDrawer(anchor, true)}>
+          <Button id="hamburgericonleft" onClick={toggleDrawer(anchor, true)}>
           
             <MenuIcon className="icon"/>
             
           </Button>
-          <Drawer
+          <Drawer 
             anchor={anchor}
             open={state[anchor]}
             onClose={toggleDrawer(anchor, false)}

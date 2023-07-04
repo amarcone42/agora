@@ -17,15 +17,24 @@
     }
 }
 
-.icon {
-    color: var(--icon-color, var(--foreground-color));
-    font-size: var(--icon-size, 24px);
-  }
- 
-  .button {
-    border-radius: 0; // Set border radius to 0 for square shape
-    padding: 0;
-  }
+#toolbar{
+    color: var(--foreground-color)!important;
+    background-color: var(--neutral-color)!important;
+
+}
+
+//mostra il temporary drawer a destra solo quando lo schermo è compreso tra 600px e 1200px
+@media (width < 600px), (width > 1200px) {
+    
+    #temporarydrawerright{
+        display: none;
+    }
+
+    #hamburgericonright{
+        display: none;
+    }  
+
+}
 
 @media (width > 600px) {
     #responsive-header {
@@ -43,12 +52,12 @@
         }
     }
 
-
-    #temporarydrawer{
+    //non mostrare il temporary drawer a sinistra
+    #temporarydrawerleft{
         display: none;
     }
 
-    #HamburgerIcon{
+    #hamburgericonleft{
         display: none;
     }
   
