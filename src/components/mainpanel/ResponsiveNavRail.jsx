@@ -12,6 +12,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import AccountMenu from '../account/AccountMenu';
 
 const drawerWidth = 300;
 
@@ -119,6 +120,8 @@ export default function ResponsiveNavRail() {
           </ListItem>
         ))}
       </List>
+      <Divider />
+      <AccountMenu type="desktop" />
     </Drawer>
   );
 }

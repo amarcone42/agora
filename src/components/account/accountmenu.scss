@@ -1,26 +1,102 @@
-#account-menu {
+#account-menu-mobile, #account-menu-desktop {
     background-color: var(--shadow);
-    .MuiPaper-root {
-        top: 0 !important;
-        filter: none;
-    }
+    
     .css-i986bg-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
         border-radius: var(--border-radius-md);
         color: var(--foreground-color);
         background-color: var(--neutral-color-dark);
-        filter: 0;
+        filter: none;
     }
     .username {
         margin-right: 8px;
-    }
-    .profile-icon {
-        margin-right: 0;
-        margin-left: auto;
     }
     hr {
         border-bottom-width: 0;
     }
     .icon {
         color: var(--foreground-color);
+    }
+}
+
+#account-menu-mobile {
+    .MuiPaper-root {
+        top: 0 !important;
+        
+    }
+}
+#account-menu-desktop {
+    ul {
+        display: flex;
+        flex-direction: column-reverse;
+        .title {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .username {
+            margin-right: 0;
+            margin-left: 8px;
+        }
+    }
+    button {
+        margin-left: 0;
+    }
+}
+
+#user-account-mobile {
+    .username {
+        display: none;
+    }
+}
+
+#user-account-desktop {
+    margin: auto auto 16px auto;
+    
+    .username {
+        width: 140px;
+        margin-left: 8px;
+        display: none;
+        color: var(--foreground-color);
+    }
+    button {
+        margin-left: 0;
+    }
+}
+
+.user-account-icon,#account-menu-desktop {
+    .profile-icon {
+        margin-right: 0;
+        margin-left: auto;
+        width: 32px;
+        height: 32px;
+        background-color: var(--accent-color) !important;
+    }
+}
+
+@media (width > 900px) {
+    #user-account-desktop {
+        padding: 8px;
+        width: 214px;
+        height: auto;
+        border-radius: 25px;
+        background-color: var(--neutral-color-dark) !important;
+        .username {
+            display: flex;
+        }
+    }
+    #account-menu-desktop {
+        .MuiPaper-root {
+            width: 214px;
+        }
+        .username {
+            margin-top: auto;
+            height: auto;
+            width: 140px;
+        }
+    }
+    .user-account-icon{
+        .profile-icon {
+            width: 40px;
+            height: 40px;
+        }
     }
 }

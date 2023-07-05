@@ -16,7 +16,21 @@ import GroupAddIcon from '@mui/icons-material/GroupAdd';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
 
-export default function AccountMenu() {
+export default function AccountMenu(type) {
+  var buttonid = "user-account-mobile";
+  var menuid = "account-menu-mobile";
+  var originhorizontal = 'right';
+  var originvertical = 'top';
+
+  const desktopobj = {type:"desktop"};
+  if (JSON.stringify(type) === JSON.stringify(desktopobj)) {
+    buttonid = "user-account-desktop";
+    menuid = "account-menu-desktop";
+    originhorizontal = 'left';
+    originvertical = 'bottom';
+  }
+  
+
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -27,23 +41,30 @@ export default function AccountMenu() {
   };
   return (
     <React.Fragment>
-      <Box id="user-account" sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
+      <Box id={buttonid} className='user-account-icon' sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
         <Tooltip title="Account settings">
           <IconButton
             onClick={handleClick}
             size="small"
             sx={{ ml: 2 }}
-            aria-controls={open ? 'account-menu' : undefined}
+            aria-controls={open ? menuid : undefined}
             aria-haspopup="true"
             aria-expanded={open ? 'true' : undefined}
           >
-            <Avatar sx={{ width: 32, height: 32 }}>M</Avatar>
+            <Avatar className='profile-icon'>M</Avatar>
+            <Typography flexWrap={1}
+                className='username'
+                variant="h6"
+            >
+            Michele Sorrentino
+            </Typography>
           </IconButton>
         </Tooltip>
       </Box>
       <Menu
         anchorEl={anchorEl}
-        id="account-menu"
+        id={menuid}
+        class='user-account-menu'
         open={open}
         onClose={handleClose}
         onClick={handleClose}
@@ -73,10 +94,10 @@ export default function AccountMenu() {
             },
           },
         }}
-        transformOrigin={{ horizontal: 'right', vertical: 'top' }}
-        anchorOrigin={{ horizontal: 'right', vertical: 'top' }}
+        transformOrigin={{ horizontal: originhorizontal, vertical: originvertical }}
+        anchorOrigin={{ horizontal: originhorizontal, vertical: originvertical }}
       >
-        <MenuItem onClick={handleClose}>
+        <MenuItem className='title' onClick={handleClose}>
             <Typography 
                 className='username'
                 variant="h6"
@@ -86,30 +107,32 @@ export default function AccountMenu() {
             <Avatar className="profile-icon"/> 
         </MenuItem>
         <Divider />
-        <MenuItem onClick={handleClose}>
-          <ListItemIcon className='icon'>
-            <PersonIcon fontSize="small" />
-          </ListItemIcon>
-          Profilo utente
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <ListItemIcon className='icon'>
-            <GroupAddIcon fontSize="small" />
-          </ListItemIcon>
-          Crea gruppo
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <ListItemIcon className='icon'>
-            <Settings fontSize="small" />
-          </ListItemIcon>
-          Impostazioni
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <ListItemIcon className='icon'>
-            <Logout fontSize="small" />
-          </ListItemIcon>
-          Logout
-        </MenuItem>
+        <div>
+          <MenuItem onClick={handleClose}>
+            <ListItemIcon className='icon'>
+              <PersonIcon fontSize="small" />
+            </ListItemIcon>
+            Profilo utente
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <ListItemIcon className='icon'>
+              <GroupAddIcon fontSize="small" />
+            </ListItemIcon>
+            Crea gruppo
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <ListItemIcon className='icon'>
+              <Settings fontSize="small" />
+            </ListItemIcon>
+            Impostazioni
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <ListItemIcon className='icon'>
+              <Logout fontSize="small" />
+            </ListItemIcon>
+            Logout
+          </MenuItem>
+        </div>
       </Menu>
     </React.Fragment>
   );

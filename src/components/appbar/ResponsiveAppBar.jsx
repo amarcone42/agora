@@ -118,7 +118,7 @@ const ResponsiveAppBar = ({name}) => {
             >
               <MenuIcon />
             </IconButton>
-            <AccountMenu />
+            <AccountMenu type="mobile" />
           </Toolbar>
         </Container>
       </AppBar>
