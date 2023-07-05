@@ -24,8 +24,7 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import './appbar.scss';
-import TemporaryDrawerLeft from '../temporarydrawer/TemporaryDrawerL';
-import TemporaryDrawerRight from '../temporarydrawer/TemporaryDrawerR';
+import TemporaryDrawer from '../temporarydrawer/TemporaryDrawer';
 
 const drawerWidth = 240;
 const settings = ['Profilo utente', 'Crea gruppo', 'Impostazioni', 'Log out'];
@@ -82,22 +81,17 @@ const ResponsiveAppBar = ({ name }) => {
       <AppBar elevation={0} id="responsive-header">
         <Container maxWidth="lg">
           <Toolbar disableGutters className="toolbar">
-            <TemporaryDrawerLeft
-              id="temporarydrawerleft"
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="menu"
-            >
-              <IconButton
-                size="large"//va in iconbutton o in temporarydrawerleft?
+            <TemporaryDrawer 
+            id="temporarydrawerleft" type="desktop">
+              <IconButton id="hamburgericonleft"
+                size="large"
                 edge="start"
                 color="inherit"
                 aria-label="menu"
               >
                 <MenuIcon />
               </IconButton>
-            </TemporaryDrawerLeft>
+            </TemporaryDrawer>
             <Typography
               variant="h6"
               noWrap
@@ -144,14 +138,9 @@ const ResponsiveAppBar = ({ name }) => {
                 ))}
               </Menu>
             </Box>
-            <TemporaryDrawerRight
-              id="temporarydrawerright"
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="menu"
-            >
-              <IconButton
+            <TemporaryDrawer  id="temporarydrawerright"
+            type="mobile" >
+              <IconButton id="hamburgericonright"
                 size="large"
                 edge="start"
                 color="inherit"
@@ -159,7 +148,7 @@ const ResponsiveAppBar = ({ name }) => {
               >
                 <MenuIcon />
               </IconButton>
-            </TemporaryDrawerRight>
+            </TemporaryDrawer>
           </Toolbar>
         </Container>
       </AppBar>

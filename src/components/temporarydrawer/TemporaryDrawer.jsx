@@ -14,9 +14,13 @@ import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import './temporarydrawer.scss';
 
-export default function TemporaryDrawerLeft() {
+export default function TemporaryDrawerLeft(type) {
+  const isDesktop = type && type.type === 'mobile';
+
   const [state, setState] = React.useState({
     left: false,
+    right: false,
+    sideTD: isDesktop ? 'right' : 'left',
   });
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -28,7 +32,7 @@ export default function TemporaryDrawerLeft() {
   };
 
   const list = (anchor) => (
-    <Box id="temporarydrawerleft"
+    <Box id="temporarydrawer"
       sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
@@ -64,9 +68,9 @@ export default function TemporaryDrawerLeft() {
 
   return (
     <div>
-      {['left'].map((anchor) => (
+      {[state.sideTD].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button id="hamburgericonleft" onClick={toggleDrawer(anchor, true)}>
+          <Button id={isDesktop ? 'hamburgericonright' : 'hamburgericonleft'} onClick={toggleDrawer(anchor, true)}>
           
             <MenuIcon className="icon"/>
             
