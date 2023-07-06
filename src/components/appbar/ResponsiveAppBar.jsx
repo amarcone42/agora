@@ -25,6 +25,8 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import './appbar.scss';
 import TemporaryDrawer from '../temporarydrawer/TemporaryDrawer';
+import AccountMenu from '../account/AccountMenu';
+
 
 const drawerWidth = 240;
 const settings = ['Profilo utente', 'Crea gruppo', 'Impostazioni', 'Log out'];
@@ -149,6 +151,7 @@ const ResponsiveAppBar = ({ name }) => {
                 <MenuIcon />
               </IconButton>
             </TemporaryDrawer>
+            <AccountMenu type="mobile" />
           </Toolbar>
         </Container>
       </AppBar>
