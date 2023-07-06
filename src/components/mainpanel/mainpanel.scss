@@ -40,6 +40,7 @@
         display: flex;
     }
 }
+
 @media (width > 900px) {
     #navrail {
         width: var(--navrail-medium) !important;
@@ -48,8 +49,25 @@
         }
     }
 }
+
+@media (width >= 600px) and (width <= 900px) {
+    #fab-esteso{
+        display: none;
+    }
+
+    
+   
+}
+
+@media (width > 900px){
+    #fab-piccolo{
+        display: none;
+    }
+}
+
 @media (width > 1200px) {
     #extra-panel {
         display: flex;
     }
 }
+

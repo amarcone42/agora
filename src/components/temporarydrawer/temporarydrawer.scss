@@ -3,8 +3,9 @@
     background-color: var(--neutral-color)!important;
 }
 
-.MuiSvgIcon-root{
-    color: var(--foreground-color)!important;
+
+#hamburgericonleft, #hamburgericonright{
+    color: var(--foreground-color);
 }
 
 @media (width <= 600px) {
@@ -17,4 +18,50 @@
         display: none;
     }  
 
+}
+
+.Typography{
+    margin-left:10px;
+    white-space: nowrap;
+    max-width: 150px;
+    width: 150px;
+    
+    
+    
+}
+
+
+.custom-stack {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    
+    width: 225px;
+  }
+  
+  
+.title{
+    margin-top: 10px;
+    margin-left:10px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.footer{
+    margin-top: 40px;
+    margin-left:10px;
+    
+}
+
+.TypographyFooter{
+    font-size: small;
+    margin: 2px;
+}
+
+.divider{
+    margin: 10px;
+}
+
+.customRating{
+    margin-right: 10px;
 }

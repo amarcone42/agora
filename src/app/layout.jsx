@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         <MainPanel name="Home"/>
         <div id="central-panel">
           {children}
-          <ButtonCreate/>
+          <ButtonCreate id="fab-bottomright"/>
         </div>
         {/*navbar Mobile in basso*/}
         <SimpleBottomNavigation name="NavbarF"/>

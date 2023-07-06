@@ -10,9 +10,15 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import HomeIcon from '@mui/icons-material/Home';
+import SearchIcon from '@mui/icons-material/Search';
+import EventAvailableIcon from '@mui/icons-material/EventAvailable';
+import ChatIcon from '@mui/icons-material/Chat';
+import MenuIcon from '@mui/icons-material/Menu';
+import SettingsIcon from '@mui/icons-material/Settings';
 import AccountMenu from '../account/AccountMenu';
+import ButtonCreate from '../buttoncreate/ButtonCreate';
+import * as ReactDOM from 'react-dom'
 
 const drawerWidth = 300;
 
@@ -96,11 +102,14 @@ export default function ResponsiveNavRail() {
       </DrawerHeader>
       <Divider />
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+        {['Home', 'Cerca', 'Attività', 'Chat'].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                {index % 4 === 0 && <HomeIcon />}
+                {index % 4 === 1 && <SearchIcon />}
+                {index % 4 === 2 && <EventAvailableIcon />}
+                {index % 4 === 3 && <ChatIcon />}
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
@@ -109,11 +118,11 @@ export default function ResponsiveNavRail() {
       </List>
       <Divider />
       <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
+        {['Impostazioni'].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                {index % 1 === 0 && <SettingsIcon />}
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
@@ -121,6 +130,9 @@ export default function ResponsiveNavRail() {
         ))}
       </List>
       <Divider />
+       
+       <ButtonCreate/>
+       
       <AccountMenu type="desktop" />
     </Drawer>
   );

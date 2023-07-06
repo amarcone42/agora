@@ -39,3 +39,8 @@ main {
     }
 }
 
+@media (width >= 600px) {
+    #fab-bottomright{
+        display: none;
+    }
+}
