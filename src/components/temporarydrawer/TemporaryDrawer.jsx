@@ -32,7 +32,7 @@ export default function TemporaryDrawerLeft(type) {
   };
 
   const list = (anchor) => (
-    <Box id="temporarydrawer"
+    <Box id={isDesktop ? 'temporarydrawerright' : 'temporarydrawerleft'}
       sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}

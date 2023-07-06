@@ -1,4 +1,4 @@
-'use client';
+'use client'
 import * as React from 'react';
 import { styled, useTheme } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';

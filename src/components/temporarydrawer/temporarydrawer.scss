@@ -6,3 +6,15 @@
 .MuiSvgIcon-root{
     color: var(--foreground-color)!important;
 }
+
+@media (width <= 600px) {
+    
+    #temporarydrawerright{
+        display: none;
+    }
+
+    #hamburgericonright{
+        display: none;
+    }  
+
+}
