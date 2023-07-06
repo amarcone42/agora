@@ -87,7 +87,7 @@ export default function ResponsiveNavRail() {
       }}
       variant="persistent"
       anchor="left"
-      open="true"
+      open={true}
     >
       <DrawerHeader>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} className='panel-name'>
