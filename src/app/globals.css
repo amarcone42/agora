@@ -1,5 +1,3 @@
-
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 255, 255, 255;
@@ -11,10 +9,12 @@
   --secondary-color: #EBEBEB;
   --foreground-color: #333234;
   --accent-color: #FFDE18;
+  --shadow: rgba(51, 50, 52, 0.5);
 
   --bianco:#FFFFFF;
 
-  
+  --border-radius-md: 12px;
+
   --navrail-small: 64px;
   --navrail-medium: 250px;
 
