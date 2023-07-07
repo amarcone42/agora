@@ -1,7 +1,165 @@
-.card {
+.post {
     margin-bottom: 15px;
     padding: 10px;
     color: var(--foreground-color);
     background: var(--neutral-color-dark);
     border-radius: 12px;
+    width: 100%;
+
+    .info{
+        display: flex;
+        flex-direction: row;
+
+        .user-info{
+            display: flex;
+            flex-direction: row;
+            margin-left: 0;
+            margin-right: auto;
+
+            .icona-profilo{
+                width: 60px;
+                height: 60px;
+                margin-right: 10px;
+                border-radius: 50%;
+            }
+
+            .names{
+                display: flex;
+                flex-direction: column;
+
+                .main-name{
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+                .sec-name{
+                    margin-top: 0;
+                    margin-bottom: 5px;
+                }
+            }              
+        }
+
+        .post-type{
+            margin-left: auto;
+            margin-right: 0;
+            height: 50px;
+            width: 50px;
+        }
+    }
+}
+
+.interaction{
+    display: flex;
+    flex-direction: row;
+}
+
+.content-imm{
+    margin-right: 0;
+    .imm{
+        width: 100%;
+        border-radius: 5px;
+    }
+}
+
+.like{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    float: left;
+    margin-right: 10px;
+
+    .zero{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.commento{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    float: left;
+
+    .zero{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.share{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    float: right;
+}
+
+.save{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    float: right;
+}
+
+
+.icona-event{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.info-event{
+    display: flex;
+    flex-direction: row;
+
+    .name-event{
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    .date{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: auto;
+    }
+}
+
+.text-content{
+    margin-top: 0;
+}
+
+.follow-button{
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 50px;
+    border-width: 3px;
+    
+    border-color: var(--accent-color);
+    color: var(--foreground-color);
+}
+
+.follow-button:hover {
+    border-width: 3px;
+
+    border-color: var(--accent-color);
+}
+.follow-button:active {
+    background-color: var(--accent-color);
+}
+
+.icona-news{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.link-div{
+    margin-bottom: 5px;
+
+    .link{
+        display: flex;
+        align-items: center;
+    }
+
+    .title{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
