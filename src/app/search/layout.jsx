@@ -17,7 +17,7 @@ export default function SearchLayout({ children }) {
           <ButtonCreate/>
         </div>
         {/*navbar Mobile in basso*/}
-        <SimpleBottomNavigation name="NavbarF"/>
+        <SimpleBottomNavigation />
         <SidePanel/>
     </body>
   );
