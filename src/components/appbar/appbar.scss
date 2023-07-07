@@ -1,5 +1,5 @@
 #responsive-header {
-    height: 64px;
+    height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -8,6 +8,7 @@
     .toolbar {
         margin-left: 0;
         margin-right: 0;
+        height: 60px;
     }
     .title {
         width: 100%;
@@ -15,12 +16,26 @@
     #open-side-panel {
         display: none;
     }
+    
+    .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+        color: var(--accent-color);
+    }
+}
+
+#hamburgericonleft{
+    min-width: 0 !important;
+    border-radius: var(--border-radius-md) !important;
+    margin-right: 10px;
+}
+#hamburgericonright {
+    min-width: 0 !important;
+    border-radius: var(--border-radius-md) !important;
+    margin-left: 10px;
 }
 
 #toolbar{
     color: var(--foreground-color)!important;
     background-color: var(--neutral-color)!important;
-
 }
 
 //hide temporary drawer if screen width > 1200px
