@@ -1,30 +1,24 @@
-#fab-piccolo{
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
+.fab {
+    color: var(--white);
     background: var(--accent-color);
-    color: var(--bianco);
-}
-
-#Add{
-    background: var(--bianco);
-    /* Aggiunta del background a forma di cerchio per AddIcon */
-    width: 24px;
-    height: 24px;
-    border-radius: 100%;
-    background-size: 10px;
-}
-
-#central-panel{
-
-    #fab-esteso{
-        display: none;
-        background: var(--accent-color);
+    .Add{
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
     }
+}
+.fab:hover {
+    background-color: var(--accent-color)!important;
+}
+
+#fab-mobile{
+    position: fixed;
+    bottom: 80px;
+    right: 20px; 
 }
 
 @media (width > 600px) {
-    #fab-piccolo{
+    #fab-mobile{
         display: none;
     }  
 }

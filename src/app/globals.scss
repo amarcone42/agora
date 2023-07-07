@@ -1,17 +1,12 @@
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-rgb: 255, 255, 255;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --white:#FFFFFF;
 
-  --neutral-color:#FFFFFF;
+  --neutral-color: var(--white);
   --neutral-color-dark: #FAFAFA;
   --secondary-color: #EBEBEB;
   --foreground-color: #333234;
   --accent-color: #FFDE18;
   --shadow: rgba(51, 50, 52, 0.5);
-
-  --bianco:#FFFFFF;
 
   --border-radius-md: 12px;
 
@@ -26,15 +21,10 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-rgb: 0, 0, 0;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
     --neutral-color:#1F1E1F;
     --neutral-color-dark: #242324;
     --secondary-color: #262627;
-    --foreground-color: #FFFFFF;
+    --foreground-color: var(--white);
     --accent-color: #FFDE18;
   }
 }
