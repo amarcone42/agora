@@ -9,13 +9,9 @@ export default function Home() {
       <ResponsiveAppBar name="Home"></ResponsiveAppBar>
       {/* Simplified version of the app bar used in the desktop view */}
       <div id="content-panel" className='panel'>
-        <Post></Post>
-        <Post></Post>
-        <Post></Post>
-        <Post></Post>
-        <Post></Post>
-        <Post></Post>
-        <Post></Post>
+        <Post type="Event"></Post>
+        <Post type="News"></Post>
+        <Post type="Post"></Post>
       </div>
       
       
