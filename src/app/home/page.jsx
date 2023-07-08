@@ -8,13 +8,11 @@ export default function Home() {
       {/* Mobile app bar */}
       <ResponsiveAppBar name="Home"></ResponsiveAppBar>
       <div id="content-panel" className='panel'>
-        <Post></Post>
-        <Post></Post>
-        <Post></Post>
-        <Post></Post>
-        <Post></Post>
-        <Post></Post>
-        <Post></Post>
+      <Post/>
+      <Post type="News"/>
+      <Post/>
+      <Post type="Event"/>
+      <Post/>
       </div>
     </main>
   )
