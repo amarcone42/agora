@@ -18,28 +18,33 @@ import Link from '@mui/material/Link';
 
 export default function Post  ({imageSrc, title, name, content, imgSrcContent, link, titleNews, nameEvent, date, type}) {
     
-    
-if(type ==="News")
-{
-    var Avatar = new String("icona-Event");
-    var Follow = new String("followNo");
-    var Info = new String("info-eventNo");
-    var Linki = new String("link-div");
-}
-else if (type === "Event")
-{
-    var Avatar = new String("icona-Event");
-    var Follow = new String("follow");
-    var Info = new String("info-event");
-    var Linki = new String("link-divNo");
-}
-else if(type === "Post")
-{
-    var Avatar = new String("icona-profilo");
-    var Follow = new String("followNo");
-    var Info = new String("info-eventNo");
-    var Linki = new String("link-divNo");
-}
+    const CustomIcon = ({ nameIcon: NameIcon }) => {
+        return <NameIcon className="post-type"/>;
+      };
+
+      var Avatar = new String("icona-profilo");
+      var Follow = new String("hiden");
+      var Info = new String("hiden");
+      var Linki = new String("hiden");
+      var typeIcon = ImageIcon;
+
+    if(type ==="News")
+    {
+        Avatar = new String("icona-Event");
+        Follow = new String("hiden");
+        Info = new String("hiden");
+        Linki = new String("link-div");
+        typeIcon = NewspaperIcon;
+    }
+    else if (type === "Event")
+    {
+        Avatar = new String("icona-Event");
+        Follow = new String("follow");
+        Info = new String("info-event");
+        Linki = new String("hiden");
+        typeIcon = EventIcon;
+    }
+
  return (
     <Card className="post">
         <div className='info'>
@@ -55,9 +60,7 @@ else if(type === "Post")
                 </div>
             </div> 
             
-            <NewspaperIcon className ='post-type'/>
-            <EventIcon className ='post-type'/>
-            <ImageIcon className ='post-type'/>
+            <CustomIcon nameIcon={typeIcon} />
 
         </div>
 

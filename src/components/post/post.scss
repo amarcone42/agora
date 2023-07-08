@@ -45,170 +45,117 @@
             width: 50px;
         }
     }
-}
-
-.interaction{
-    display: flex;
-    flex-direction: row;
-}
-
-.content-imm{
-    margin-right: 0;
-    .imm{
+    .interaction{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .content-imm{
+        margin-right: 0;
+    
+        .imm{
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+    
+    .like{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        float: left;
+        margin-right: 10px;
+    
+        .zero{
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+    
+    .commento{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        float: left;
+    
+        .zero{
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+    
+    .share{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        float: right;
+    }
+    
+    .save{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        float: right;
+    }
+    
+    
+    .icona-Event{
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+    }
+    
+    .info-event{
+        display: flex;
+        flex-direction: row;
+    
+        .name-event{
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+        .date{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: auto;
+        }
+    }
+    
+    .follow{
+    
+    .follow-button{
+        margin-bottom: 5px;
         width: 100%;
-        border-radius: 5px;
+        border-radius: 50px;
+        border-width: 3px;
+        
+        border-color: var(--accent-color);
+        color: var(--foreground-color);
     }
-}
-
-.like{
-    width: 30px;
-    height: 30px;
-    display: flex;
-    float: left;
-    margin-right: 10px;
-
-    .zero{
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-}
-
-.commento{
-    width: 30px;
-    height: 30px;
-    display: flex;
-    float: left;
-
-    .zero{
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-}
-
-.share{
-    width: 30px;
-    height: 30px;
-    display: flex;
-    float: right;
-}
-
-.save{
-    width: 30px;
-    height: 30px;
-    display: flex;
-    float: right;
-}
-
-
-.icona-Event{
-    width: 60px;
-    height: 60px;
-    margin-right: 10px;
-}
-
-.info-event{
-    display: flex;
-    flex-direction: row;
-
-    .name-event{
-        margin-top: 5px;
-        margin-bottom: 0;
-    }
-    .date{
-        margin-top: 5px;
-        margin-bottom: 5px;
-        margin-left: auto;
-    }
-}
-
-.info-eventNo{
-    display: none;
-    flex-direction: row;
-
-    .name-event{
-        margin-top: 5px;
-        margin-bottom: 0;
-    }
-    .date{
-        margin-top: 5px;
-        margin-bottom: 5px;
-        margin-left: auto;
-    }
-}
-
-.text-content{
-    margin-top: 0;
-}
-
-
-.followNo{
-    display: none;
-.follow-button{
-    margin-bottom: 5px;
-    width: 100%;
-    border-radius: 50px;
-    border-width: 3px;
     
-    border-color: var(--accent-color);
-    color: var(--foreground-color);
-}
-
-.follow-button:hover {
-    border-width: 3px;
-
-    border-color: var(--accent-color);
-}
-.follow-button:active {
-    background-color: var(--accent-color);
-}
-}
-
-.follow{
-
-.follow-button{
-    margin-bottom: 5px;
-    width: 100%;
-    border-radius: 50px;
-    border-width: 3px;
+    .follow-button:hover {
+        border-width: 3px;
     
-    border-color: var(--accent-color);
-    color: var(--foreground-color);
-}
-
-.follow-button:hover {
-    border-width: 3px;
-
-    border-color: var(--accent-color);
-}
-.follow-button:active {
-    background-color: var(--accent-color);
-}
-}
-
-.link-div{
-    margin-bottom: 5px;
-
-    .link{
-        display: flex;
-        align-items: center;
+        border-color: var(--accent-color);
     }
-
-    .title{
-        margin-top: 0;
-        margin-bottom: 0;
+    .follow-button:active {
+        background-color: var(--accent-color);
     }
-}
-
-.link-divNo{
-    display: none;
-
-    .link{
-        display: flex;
-        align-items: center;
     }
-
-    .title{
-        margin-top: 0;
-        margin-bottom: 0;
+    
+    .link-div{
+        margin-bottom: 5px;
+    
+        .link{
+            display: flex;
+            align-items: center;
+        }
+    
+        .title{
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    } 
+    .hiden{
+        display: none;
     }
 }
