@@ -1,20 +1,14 @@
-import ResponsiveAppBar from '../components/appbar/ResponsiveAppBar'
-import Post from '../components/post/Post'
+'use client'
+import { useRouter } from "next/navigation";
+import { Button } from "../lib/materialbutton";
+import { Link, Typography } from "@mui/material";
 
-
-export default function Home() {
-  return (
-    <main>
-      {/* Mobile app bar */}
-      <ResponsiveAppBar name="Home"></ResponsiveAppBar>
-      {/* Simplified version of the app bar used in the desktop view */}
-      <div id="content-panel" className='panel'>
-        <Post type="Event"></Post>
-        <Post type="News"></Post>
-        <Post type="Post"></Post>
-      </div>
-      
-      
-    </main>
-  )
+export default function Login() {
+    const router = useRouter()
+    return (
+      <main>
+        <h1>Login</h1>
+        <Link href="/home"><Button variant="filled">Accedi</Button></Link>
+      </main>
+    )
 }
