@@ -1,43 +1,54 @@
-// Stile generale della bottomnavigation, valido anche per la versione desktop
+// class that contains navbar style
 .navbar {
 
-  // Scegli il colore di default di sfondo della navbar
   background-color: var(--neutral-color);
 
-  // Scegli lo stile generale dell'icona
+  //default icon style
   .icon {
     color: var(--icon-color, var(--foreground-color));
     font-size: var(--icon-size, 24px);
   }
+  
+  //default button style
+  .button {
+      border-radius: 0; 
+      padding: 0;
+  }
 
-  // Scegli il colore di default delle label
+  // default label color
   .MuiBottomNavigationAction-label {
     color: var(--foreground-color);
   }
   
-  //scegli lo stile degli elementi quando vengono selezionati
+  //class that contains selected elements
   .Mui-selected {
 
-    // Scegli lo stile delle label quando vengono selezionate
+    // selected label style
     font-weight: bold;
     color: var(--selected-color, var(--foreground-color));
 
-    // Scegli lo stile delle icone, e dello sfondo delle icone quando vengono selezionate
+    // selected background icon style
     .MuiSvgIcon-root {
-      color: var(--selected-color, var(--foreground-color));
       background-color: var(--selected-bg-color, var(--accent-color));
-      padding: 4px 10px;
       border-radius: 25%;
+      width: 40%;
+      height: 50%;
     }
+    
+    // selected icons style
+    .MuiSvgIcon-root > svg {
+      color: var(--selected-color, var(--foreground-color));
+    }
+    
   }
   
-  // Scegli il colore del ripple touch
+  // ripple touch color
   .MuiTouchRipple-child {
     background-color: var(--foreground-color) !important;
   }
 }
 
-//fissa il component nella parte bassa dello schermo
+//pin component to bottom
 .stickToBottom {
   width: 100%;
   position: fixed;
