@@ -27,6 +27,7 @@ import Stack from '@mui/material/Stack';
 import Rating from "@mui/material/Rating";
 import { alpha, styled } from "@mui/material/styles";
 import '../temporarydrawer/temporarydrawer.scss';
+import Link from 'next/link';
 
 const drawerWidth = 240;
 
@@ -114,32 +115,32 @@ export default function SidePanel() {
       <Typography className="title" > Preferiti </Typography>
         <Stack direction="row" spacing="var(--spacing)" alignItems="center" className="custom-stack">
           <Typography className="Typography">Lucia Maggi</Typography>
-          <Box className="customRating" spacing="var(--spacing)"><Rating defaultValue={2} max={1} /></Box>
+          <Box className="customRating" spacing="var(--spacing)"><Rating defaultValue={1} max={1} /></Box>
         </Stack>
 
         <Stack direction="row" spacing="var(--spacing)" alignItems="center" className="custom-stack">
           <Typography className="Typography">CatARTico</Typography>
-          <Box className="customRating" spacing="var(--spacing)"><Rating defaultValue={2} max={1} /></Box>
+          <Box className="customRating" spacing="var(--spacing)"><Rating defaultValue={1} max={1} /></Box>
         </Stack>
 
         <Stack direction="row" spacing="var(--spacing)" alignItems="center" className="custom-stack">
           <Typography className="Typography">Catai</Typography>
-          <Box className="customRating" spacing="var(--spacing)"><Rating defaultValue={2} max={1} /></Box>
+          <Box className="customRating" spacing="var(--spacing)"><Rating defaultValue={1} max={1} /></Box>
         </Stack>
 
         <Stack direction="row" spacing="var(--spacing)" alignItems="center" className="custom-stack">
           <Typography className="Typography">In Movimento</Typography>
-          <Box className="customRating" spacing="var(--spacing)"><Rating defaultValue={2} max={1} /></Box>
+          <Box className="customRating" spacing="var(--spacing)"><Rating defaultValue={1} max={1} /></Box>
         </Stack>
 
         <Stack direction="row" spacing="var(--spacing)" alignItems="center" className="custom-stack">
           <Typography className="Typography">Fidays for Future</Typography>
-          <Box className="customRating" spacing="var(--spacing)"><Rating defaultValue={2} max={1} /></Box>
+          <Box className="customRating" spacing="var(--spacing)"><Rating defaultValue={1} max={1} /></Box>
         </Stack>
 
         <Stack direction="row" spacing="var(--spacing)" alignItems="center" className="custom-stack">
           <Typography className="Typography">LGBTQ+ Community</Typography>
-          <Box className="customRating" spacing="var(--spacing)"><Rating defaultValue={2} max={1} /></Box>
+          <Box className="customRating" spacing="var(--spacing)"><Rating defaultValue={1} max={1} /></Box>
         </Stack>
       </FormGroup>
     <Divider className='divider'/>
@@ -178,12 +179,24 @@ export default function SidePanel() {
       <Divider />
 
       <Stack   className="footer">
+        <Link href="https://www.example.com" className="link-text" target="_blank">
           <Typography className="TypographyFooter">Termini di servizio</Typography>
+        </Link>
+        <Link href="https://www.example.com" className="link-text" target="_blank">
           <Typography className="TypographyFooter">Informative sulla privacy</Typography>
+        </Link>
+        <Link href="https://www.example.com" className="link-text" target="_blank">
           <Typography className="TypographyFooter">Norme sui cookies</Typography>
+        </Link>
+        <Link href="https://www.example.com" className="link-text" target="_blank">
           <Typography className="TypographyFooter">Annunci</Typography>
+        </Link>
+        <Link href="https://www.example.com" className="link-text" target="_blank">
           <Typography className="TypographyFooter">Chi siamo</Typography>
+        </Link>
+        <Link href="https://www.example.com" className="link-text" target="_blank">
           <Typography className="TypographyFooter">Nome sistema, inc. ® 2023</Typography>
+        </Link>
         </Stack>
        </Drawer>
     </Box>
