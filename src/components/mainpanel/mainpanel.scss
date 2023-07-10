@@ -35,10 +35,19 @@
     margin-right: 0;
 }
 
+#createNavrailExtended{
+    display: none;
+}
+
 @media (width > 600px) {
     #navrail {
         display: flex;
     }
+    
+    #createNavrail{
+        width: 40px;
+        height: 40px;
+    } 
 }
 
 @media (width > 900px) {
@@ -50,18 +59,13 @@
     }
 }
 
-@media (width >= 600px) and (width <= 900px) {
-    #fab-esteso{
+@media (width > 900px) {
+    #createNavrail{
         display: none;
-    }
+    }  
 
-    
-   
-}
-
-@media (width > 900px){
-    #fab-piccolo{
-        display: none;
+    #createNavrailExtended{
+        display: flex;
     }
 }
 

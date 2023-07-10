@@ -131,7 +131,8 @@ export default function ResponsiveNavRail() {
       </List>
       <Divider />
        
-       <ButtonCreate/>
+       <ButtonCreate id="createNavrailExtended" label="CREA"/>
+       <ButtonCreate id="createNavrail" />
        
       <AccountMenu type="desktop" />
     </Drawer>

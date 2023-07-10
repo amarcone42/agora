@@ -14,7 +14,7 @@ export default function HomeLayout({ children }) {
         <MainPanel name="Home"/>
         <div id="central-panel">
           {children}
-          <ButtonCreate/>
+          <ButtonCreate id="fab-mobile"/>
         </div>
         {/*navbar Mobile in basso*/}
         <SimpleBottomNavigation />
