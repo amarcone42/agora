@@ -1,10 +1,19 @@
+#bottom-navbar {
+  height: 60px;
+  .navbar {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 // class that contains navbar style
 .navbar {
-
+  margin: 0;
   background-color: var(--neutral-color);
 
   //default icon style
   .icon {
+    margin-top: 5px;
     color: var(--icon-color, var(--foreground-color));
     font-size: var(--icon-size, 24px);
   }
@@ -17,6 +26,9 @@
 
   // default label color
   .MuiBottomNavigationAction-label {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-weight: bold;
     color: var(--foreground-color);
   }
   
@@ -30,9 +42,9 @@
     // selected background icon style
     .MuiSvgIcon-root {
       background-color: var(--selected-bg-color, var(--accent-color));
-      border-radius: 25%;
-      width: 40%;
-      height: 50%;
+      border-radius: 12px;
+      width: 50px;
+      height: 30px;
     }
     
     // selected icons style
@@ -44,7 +56,7 @@
   
   // ripple touch color
   .MuiTouchRipple-child {
-    background-color: var(--foreground-color) !important;
+    background-color: var(--accent-color) !important;
   }
 }
 
@@ -55,10 +67,10 @@
   bottom: 0;
 }
 
-  @media (width > 600px) {
-    .navbar {
-        display: none !important;
-    }
+@media (width > 600px) {
+  #bottom-navbar {
+    display: none !important;
+  }
 }
   
 

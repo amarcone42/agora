@@ -3,24 +3,22 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Fab from '@mui/material/Fab';
 import AddIcon from '@mui/icons-material/Add';
-import './ButtonCreate.scss';
+import './buttoncreate.scss';
+import { Typography } from '@mui/material';
 
-
-export default function ButtonCreate() {
+export default function ButtonCreate({label}) {
+  var variant = ''
+  var id = 'fab-mobile'
+  if (label) {
+    variant = 'extended';
+    id = '';
+  }
   return (
-    <>
-     <Box sx={{ '& > :not(style)': { m: 1 } }}>
-          <Fab id="fab-piccolo" aria-label="add">
-              <AddIcon sx={{ color: "333234" }}/>
-          </Fab>
-      </Box>
-
-      <Box sx={{ '& > :not(style)': { m: 1 } }}>
-      <Fab id="fab-esteso" variant="extended" size="medium">
-              <AddIcon id="Add" sx={{ mr: 2, color: "#333234" }} />
-              Crea
-          </Fab>
-        </Box>
-      </>
+    <Box sx={{ '& > :not(style)': { m: 1 } }}>
+      <Fab id={id} className="fab" variant={variant} aria-label="add">
+          <AddIcon className="Add"/>
+          <Typography className='label'>{label}</Typography>
+      </Fab>
+    </Box>
   );
 }

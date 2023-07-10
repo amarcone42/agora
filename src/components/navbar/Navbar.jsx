@@ -8,6 +8,8 @@ import SearchIcon from '@mui/icons-material/Search';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import ChatIcon from '@mui/icons-material/Chat';
 import './navbar.scss';
+import { useRouter } from 'next/navigation'
+import { Link } from '@mui/material';
 
 export function Navbar() {
   const [value, setValue] = React.useState(0);
@@ -17,28 +19,28 @@ export function Navbar() {
     return <NameIcon className="icon" />;
   };
 
+  const router = useRouter()
+
   return (
-    <Box className="stickToBottom" >
-      <BottomNavigation id="bottomNavigation"
-        className="navbar"
-        showLabels={true}
-        value={value}
-        onChange={(event, newValue) => {
-          setValue(newValue);
-        }}
-      >
-        <BottomNavigationAction label="Home" icon={<CustomIcon nameIcon={HomeIcon} />} />
-        <BottomNavigationAction label="Cerca" icon={<CustomIcon nameIcon={SearchIcon} />} />
-        <BottomNavigationAction label="Attività" icon={<CustomIcon nameIcon={EventAvailableIcon} />} />
-        <BottomNavigationAction label="Chat" icon={<CustomIcon nameIcon={ChatIcon} />} />
-      </BottomNavigation>
-    </Box>
+    <BottomNavigation
+      className="navbar"
+      showLabels={true}
+      value={value}
+      onChange={(event, newValue) => {
+        setValue(newValue);
+      }}
+    >
+      <BottomNavigationAction label="Home" icon={<CustomIcon nameIcon={HomeIcon} />} onClick={() => router.push('/home')} />
+      <BottomNavigationAction label="Cerca" icon={<CustomIcon nameIcon={SearchIcon} />} onClick={() => router.push('/search')} />
+      <BottomNavigationAction label="Attività" icon={<CustomIcon nameIcon={EventAvailableIcon} />} onClick={() => router.push('/activity')} />
+      <BottomNavigationAction label="Chat" icon={<CustomIcon nameIcon={ChatIcon} />} onClick={() => router.push('/chat')} />
+    </BottomNavigation>
   );
 }
 
 export default function SimpleBottomNavigation() {
   return(
-    <div className="stickToBottom">
+    <div className="stickToBottom" id='bottom-navbar'>
       <Navbar />
     </div>
   );
