@@ -12,7 +12,7 @@ import IconButton from '@mui/material/IconButton';
 export default function ImpostazioniIcon() {
     return (
       
-        <IconButton sx={{ marginTop: '100px', paddingRight: '74px' }} className='rowBoxIcon'>
+        <IconButton sx={{ marginTop: '180px', paddingRight: '74px' }} className='rowBoxIcon'>
           <SettingsIcon sx={{ marginLeft: '0px' }} className='sicon' />
           <Typography id='font'>Impostazioni</Typography>
         </IconButton>

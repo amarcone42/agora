@@ -54,7 +54,7 @@ export default function ContentHomepage () {
   return (
     <Box id='homepageContent'>
     <DrawerHeader>
-        <Typography variant="h5" component="div" fontWeight={'bold'} sx={{ flexGrow: 1 }} className='panel-name'>
+        <Typography variant="h6" component="div" fontWeight={'bold'} sx={{ flexGrow: 1 }} className='panel-name'>
               Contenuti
           </Typography>
       </DrawerHeader>

@@ -102,6 +102,11 @@ export default function ResponsiveNavRail() {
       anchor="left"
       open={true}
     >
+      <DrawerHeader>
+        <Typography variant="h7" component="div" fontWeight={'bold'} sx={{ flexGrow: 1 }} className='panel-name'>
+              Agorà
+          </Typography>
+      </DrawerHeader>
        <VerticalNavbar label={true}/> {/**Navbar verticale */}
        <ExtendedNavbar label={true}/>
        
