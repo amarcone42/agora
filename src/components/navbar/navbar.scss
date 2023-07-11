@@ -9,11 +9,12 @@
 // class that contains navbar style
 .navbar {
   margin: 0;
-  background-color: var(--neutral-color);
+  background-color: var(--neutral-color) !important;
 
   //default icon style
   .icon {
     margin-top: 5px;
+    
     color: var(--icon-color, var(--foreground-color));
     font-size: var(--icon-size, 24px);
   }
@@ -60,18 +61,115 @@
   }
 }
 
-//pin component to bottom
+@media (width < 600px) {
+
+  //pin component to bottom
 .stickToBottom {
   width: 100%;
   position: fixed;
   bottom: 0;
 }
 
-@media (width > 600px) {
+}
+
+
+
+@media (width > 600px) AND (width <= 900px) {
+
   #bottom-navbar {
     display: none !important;
   }
+
+  #verticalNavbar{
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    margin-left: -9px;
+    margin-top: 0;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  #extendedNavbar{
+    display: none !important;
+  }
+
+  .rowBoxIcon{
+    flex-direction: row;
+    display:flex;
+    justify-content: flex-start !important;
+    margin-left: 10px;
+  }
 }
+
+@media (width > 900px) {
+
+  #verticalNavbar{
+    display: none;
+  }
+
+  #bottom-navbar {
+    display: none !important;
+  }
+
+  #extendedNavbar{
+    font-size: 0px;
+    font-display: none !important;
+    .Mui-selected{
+      display: flex !important;
+      font-display: none !important;
+      font-size: 0px;
+      
+    }
+    
+  }
+}
+
+#extendedNavbar{
+  display: flex;
+    flex-direction: column;
+    width: 40px;
+    margin-left: -9px;
+    margin-top: 0;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.rowBox{
+  flex-direction: row;
+  display:flex;
+  align-items: center;
+}
+
+.rowBoxIcon{
+  flex-direction: row;
+  display:flex;
+  align-items: center;
   
+  
+}
+
+.sicon {
+  margin-top: 5px;
+  color: var(--icon-color, var(--foreground-color));
+  font-size: var(--icon-size, 24px);
+  justify-content: flex-start !important;
+}
+
+#font{
+  color: var(--foreground-color);
+  display: none;
+  margin-left: 28px;
+}
+
+@media (width > 900px) {
+  
+
+  #font{
+      color: var(--foreground-color);
+      display: flex !important;
+  }
+
+}
 
   

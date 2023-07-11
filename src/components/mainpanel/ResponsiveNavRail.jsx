@@ -19,6 +19,13 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import AccountMenu from '../account/AccountMenu';
 import ButtonCreate from '../buttoncreate/ButtonCreate';
 import * as ReactDOM from 'react-dom'
+import Navbar from '../../components/navbar/Navbar';
+import '../navbar/navbar.scss';
+import VerticalNavbar from '../../components/navbar/VerticalNavbar';
+import ExtendedNavbar from '../../components/navbar/ExtendedNavbar';
+import IconButton from '@mui/material/IconButton';
+import ImpostazioniIcon from '../../components/navbar/ImpostazioniIcon';
+
 
 const drawerWidth = 300;
 
@@ -95,42 +102,15 @@ export default function ResponsiveNavRail() {
       anchor="left"
       open={true}
     >
-      <DrawerHeader>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} className='panel-name'>
-              Agorà
-          </Typography>
-      </DrawerHeader>
-      <Divider />
-      <List>
-        {['Home', 'Cerca', 'Attività', 'Chat'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 4 === 0 && <HomeIcon />}
-                {index % 4 === 1 && <SearchIcon />}
-                {index % 4 === 2 && <EventAvailableIcon />}
-                {index % 4 === 3 && <ChatIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {['Impostazioni'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 1 === 0 && <SettingsIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
+       <VerticalNavbar label={true}/> {/**Navbar verticale */}
+       <ExtendedNavbar label={true}/>
        
+      <Divider />
+
+          <ImpostazioniIcon/>
+        
+        
+        <Divider />
        <ButtonCreate id="createNavrailExtended" label="CREA"/>
        <ButtonCreate id="createNavrail" />
        

@@ -7,11 +7,21 @@ import HomeIcon from '@mui/icons-material/Home';
 import SearchIcon from '@mui/icons-material/Search';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import ChatIcon from '@mui/icons-material/Chat';
+import SettingsIcon from '@mui/icons-material/Settings';
 import './navbar.scss';
+import Navbar from '../../components/navbar/Navbar';
 import { useRouter } from 'next/navigation'
-import { Link } from '@mui/material';
+import { Link, Typography } from '@mui/material';
 
-export default function Navbar({label}) {
+//export default function VerticalNavbar() {
+//  return (
+ //   <Box className="verticalNavbar" id="verticalNavbar" showLabels={false}>
+ //    <Navbar className="vertigoNavbar" id="vertigoNavbar" label={true}/>
+ //  </Box>
+//  );
+//}
+
+export default function VerticalNavbar({label}) {
   const [value, setValue] = React.useState(0);
 
   //applica lo stile all'icona che viene passata nella funzione
@@ -24,7 +34,7 @@ export default function Navbar({label}) {
 
   return (
     
-    <BottomNavigation id="bottom-navbar"
+    <BottomNavigation id='extendedNavbar'
       className="navbar"
       showLabels={showLabels}
       value={value}
@@ -32,12 +42,24 @@ export default function Navbar({label}) {
         setValue(newValue);
       }}
     >
+      <Box className='rowBox'>
       <BottomNavigationAction className="Button" label="Home" icon={<CustomIcon nameIcon={HomeIcon} />} onClick={() => router.push('/home')} />
+      <Typography>Home</Typography>
+      </Box>
+      <Box className='rowBox'>
       <BottomNavigationAction className="Button" label="Cerca" icon={<CustomIcon nameIcon={SearchIcon} />} onClick={() => router.push('/search')} />
+      <Typography>Cerca</Typography>
+      </Box>
+      <Box className='rowBox'>
       <BottomNavigationAction className="Button" label="Attività" icon={<CustomIcon nameIcon={EventAvailableIcon} />} onClick={() => router.push('/activity')} />
+      <Typography>Attività</Typography>
+      </Box>
+      <Box className='rowBox'>
       <BottomNavigationAction className="Button" label="Chat" icon={<CustomIcon nameIcon={ChatIcon} />} onClick={() => router.push('/chat')} />
+      <Typography>Chat</Typography>
+      </Box>
+
     </BottomNavigation>
    
   );
 }
-
