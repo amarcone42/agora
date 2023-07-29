@@ -92,6 +92,7 @@
 
   #extendedNavbar{
     display: none !important;
+    
   }
 
   .rowBoxIcon{
@@ -112,16 +113,18 @@
     display: none !important;
   }
 
+  
+
   #extendedNavbar{
+    
     font-size: 0px;
     font-display: none !important;
     .Mui-selected{
       display: flex !important;
       font-display: none !important;
       font-size: 0px;
-      
     }
-    
+   
   }
 }
 
