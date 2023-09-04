@@ -10,9 +10,22 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import HomeIcon from '@mui/icons-material/Home';
+import SearchIcon from '@mui/icons-material/Search';
+import EventAvailableIcon from '@mui/icons-material/EventAvailable';
+import ChatIcon from '@mui/icons-material/Chat';
+import MenuIcon from '@mui/icons-material/Menu';
+import SettingsIcon from '@mui/icons-material/Settings';
 import AccountMenu from '../account/AccountMenu';
+import ButtonCreate from '../buttoncreate/ButtonCreate';
+import * as ReactDOM from 'react-dom'
+import Navbar from '../../components/navbar/Navbar';
+import '../navbar/navbar.scss';
+import VerticalNavbar from '../../components/navbar/VerticalNavbar';
+import ExtendedNavbar from '../../components/navbar/ExtendedNavbar';
+import IconButton from '@mui/material/IconButton';
+import ImpostazioniIcon from '../../components/navbar/ImpostazioniIcon';
+
 
 const drawerWidth = 300;
 
@@ -90,37 +103,22 @@ export default function ResponsiveNavRail() {
       open={true}
     >
       <DrawerHeader>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} className='panel-name'>
+        <Typography variant="h7" component="div" fontWeight={'bold'} sx={{ flexGrow: 1 }} className='panel-name'>
               Agorà
           </Typography>
       </DrawerHeader>
+       <VerticalNavbar label={true}/> {/**Navbar verticale */}
+       <ExtendedNavbar label={true}/>
+       
       <Divider />
-      <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
+
+          <ImpostazioniIcon/>
+        
+        
+        <Divider />
+       <ButtonCreate id="createNavrailExtended" label="CREA"/>
+       <ButtonCreate id="createNavrail" />
+       
       <AccountMenu type="desktop" />
     </Drawer>
   );

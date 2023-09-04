@@ -3,16 +3,9 @@
     background-color: var(--neutral-color)!important;
 }
 
-#temporarydrawerright {
-    margin-left: 14px;
-}
-
-#temporarydrawerleft {
-    margin-left: 10px;
-}
 
 #hamburgericonleft, #hamburgericonright{
-    color: var(--foreground-color) !important;
+    color: var(--foreground-color);
 }
 
 @media (width <= 600px) {
