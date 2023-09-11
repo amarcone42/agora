@@ -10,33 +10,8 @@
     .bottom-navbar {
         display: none !important;
       }
-
-
-.center-box {
-    margin-top: 200px;
-    margin-bottom: 200px;
-    position: relative;
-    align-self: center;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--foreground-color);
-    color: var(--secondary-color) !important;
-    border-radius: 20px;
-    
 }
 
-.selectconvo{
-    margin: 6px;
-}
-
-}
-@media (width <= 600px) {
-.center-box{
-    display: none;
-}
-}
 .secondPage {
     display: flex;
     flex-direction: column;
