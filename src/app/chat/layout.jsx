@@ -26,12 +26,16 @@ export default function SearchLayout({ children }) {
         <div id="central-panel">
         
           {children}
-          <Fab className="fab" color="primary" aria-label="chat">
+
+          
+          <Fab className="fab" id="fabchat" color="primary" aria-label="chat">
            <ChatIcon />
           </Fab>
           
+
         </div>
         {/*navbar Mobile in basso*/}
+        
         <SimpleBottomNavigation className="bottomNavbar" id="bottomNavbar"/>
         <SidePanel/>
     </body>

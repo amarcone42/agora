@@ -8,6 +8,8 @@ import SearchIcon from '@mui/icons-material/Search';
 import Searchbar from '../../components/searchbar/Searchbar'
 import ChatMessage from '../../components/chatmessage/ChatMessage'
 import ChatRecMessage from '../../components/chatmessage/ChatRecMessage'
+import SearchLayout from './layout';
+import SimpleBottomNavigation from '../../components/navbar/Navbar'
 
  
 export default function Chat() {
@@ -22,6 +24,7 @@ export default function Chat() {
   };
 
   return (
+
     <main>
       {/* Mobile app bar */}
       
@@ -82,16 +85,18 @@ export default function Chat() {
           <div className="leftContainer">
             <ChatRecMessage className='leftelement' contenuto="Va bene, Ugo. Sono contento della tua passione sull’ argomento e di quanto tu ci tenga alla mia compagnia, per cui mi impegnerò per riuscire a partecipare a questo evento!" data="12:42" />
           </div>
-
+          
         </div>
         
         
         )}
+
         </div>
 
         
       
       
     </main>
+    
   )
 }
