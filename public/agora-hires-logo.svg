@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="127.99999"
+   height="127.99999"
+   viewBox="0 0 33.866664 33.866664"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="logo\agora-hires-logo-dark.png"
+   inkscape:export-xdpi="810"
+   inkscape:export-ydpi="810"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="agora-hires-logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="5.822615"
+     inkscape:cx="50.578649"
+     inkscape:cy="63.115971"
+     inkscape:window-width="1920"
+     inkscape:window-height="1094"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="0.26458333"
+       spacingy="0.26458333"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Livello 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path18"
+       style="display:inline;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.561029;stroke-dasharray:none;stroke-opacity:1"
+       d="M 16.933333,6.6145831 A 15,15 0 0 0 1.9332153,21.614701 15,15 0 0 0 2.0670573,23.491589 L 6.5463704,22.905062 A 10.5,10.5 0 0 1 6.4331991,21.614701 10.5,10.5 0 0 1 16.933333,11.114567 a 10.5,10.5 0 0 1 10.500135,10.500134 10.5,10.5 0 0 1 -0.08165,1.294495 l 4.459159,0.583944 A 15,15 0 0 0 31.933451,21.614701 15,15 0 0 0 16.933333,6.6145831 Z m 0,5.4999229 a 9.5,9.5 0 0 0 -9.500195,9.500195 9.5,9.5 0 0 0 1.2252482,4.61884 L 13.43949,23.524146 a 4,4 0 0 1 -0.505913,-1.909445 4,4 0 0 1 3.999756,-3.999756 4,4 0 0 1 3.999756,3.999756 4,4 0 0 1 -0.505912,1.909445 l 4.79919,2.71973 a 9.5,9.5 0 0 0 1.207162,-4.629175 9.5,9.5 0 0 0 -9.500196,-9.500195 z"
+       inkscape:label="logo-doppio-semicerchio"
+       transform="translate(0,0.50410377)" />
+  </g>
+</svg>
