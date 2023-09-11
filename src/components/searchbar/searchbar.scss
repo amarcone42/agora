@@ -1,0 +1,44 @@
+$primary-color: #EBEBEB;
+$secondary-color: #333234;
+$neutral-color: #FFFFFF;
+
+$font-family: 'Open Sans';
+$font-weight-bold: 700;
+$font-weight-medium: 600;
+
+/* Rectangle 11 */
+.searchbar{
+    position: relative;
+}
+
+.rettangolo {
+    position: relative;
+    width: 210px;
+    height: 42px;
+    background: $primary-color;
+    border-radius: 30px;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.testo {
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: $secondary-color;
+    position: relative;
+}
+
+.icona {
+    right: 12.56%;
+    top: 9%;
+    color: $secondary-color;
+    position: relative;
+}
