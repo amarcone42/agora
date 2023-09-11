@@ -2,7 +2,7 @@ import React from 'react';
 import './home.scss';
 import { Open_Sans } from 'next/font/google';
 import MainPanel from '../../components/mainpanel/MainPanel';
-import SimpleBottomNavigation from '../../components/navbar/Navbar';
+import BottomNavbar from '../../components/navbar/BottomNavbar';
 import SidePanel from '../../components/appbar/SidePanel'
 import ButtonCreate from '../../components/buttoncreate/ButtonCreate'
 
@@ -14,10 +14,10 @@ export default function HomeLayout({ children }) {
         <MainPanel name="Home"/>
         <div id="central-panel">
           {children}
-          <ButtonCreate/>
+          <ButtonCreate id="fab-mobile"/>
         </div>
         {/*navbar Mobile in basso*/}
-        <SimpleBottomNavigation />
+        <BottomNavbar className='bottom-navbar'/>
         <SidePanel/>
     </body>
   );

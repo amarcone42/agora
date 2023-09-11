@@ -15,6 +15,15 @@
     }
 }
 
+@media (width > 600px) {
+.MuiBottomNavigation-root{
+    flex-direction: column;
+    margin: auto;
+    align-self: center;
+}
+
+}
+
 .side-panel {
     width: var(--navrail-medium);
     div {
@@ -35,11 +44,23 @@
     margin-right: 0;
 }
 
+#createNavrailExtended{
+    display: none;
+}
+
 @media (width > 600px) {
     #navrail {
         display: flex;
     }
+    
+    #createNavrail{
+        width: 40px;
+        height: 40px;
+        margin-left: 12px;
+    } 
+
 }
+
 @media (width > 900px) {
     #navrail {
         width: var(--navrail-medium) !important;
@@ -48,8 +69,29 @@
         }
     }
 }
+
+
+
+@media (width > 900px) {
+    #createNavrail{
+        display: none;
+    }  
+
+    #createNavrailExtended{
+        display: flex;
+        margin-left: 20px;
+    }
+
+    
+
+}
+
 @media (width > 1200px) {
     #extra-panel {
         display: flex;
     }
+    
 }
+
+
+  

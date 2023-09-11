@@ -14,7 +14,7 @@ export default function SearchLayout({ children }) {
         <MainPanel name="Cerca"/>
         <div id="central-panel">
           {children}
-          <ButtonCreate/>
+          <ButtonCreate id="fab-mobile"/>
         </div>
         {/*navbar Mobile in basso*/}
         <SimpleBottomNavigation />

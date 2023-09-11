@@ -9,10 +9,21 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import HomeIcon from '@mui/icons-material/Home';
+import SearchIcon from '@mui/icons-material/Search';
+import EventAvailableIcon from '@mui/icons-material/EventAvailable';
+import ChatIcon from '@mui/icons-material/Chat';
 import MenuIcon from '@mui/icons-material/Menu';
+import SettingsIcon from '@mui/icons-material/Settings';
+import FormGroup from '@mui/material/FormGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Switch from '@mui/material/Switch';
+import Stack from '@mui/material/Stack';
+import Rating from "@mui/material/Rating";
+import Typography from '@mui/material/Typography';
+import { alpha, styled } from "@mui/material/styles";
 import './temporarydrawer.scss';
+import ContentHomepage from '../contentpanel/ContentHomepage';
 
 export default function TemporaryDrawerLeft(type) {
   const isDesktop = type && type.type === 'mobile';
@@ -35,34 +46,10 @@ export default function TemporaryDrawerLeft(type) {
     <Box id={isDesktop ? 'temporarydrawerright' : 'temporarydrawerleft'}
       sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
       role="presentation"
-      onClick={toggleDrawer(anchor, false)}
+      onClick={(event) => event.stopPropagation()} // Stop event propagation
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
+     <ContentHomepage/>
     </Box>
   );
 
@@ -70,8 +57,8 @@ export default function TemporaryDrawerLeft(type) {
     <div>
       {[state.sideTD].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button id={isDesktop ? 'hamburgericonright' : 'hamburgericonleft'} onClick={toggleDrawer(anchor, true)}>
-          
+          <Button id={isDesktop ? 'hamburgericonright' : 'hamburgericonleft'} 
+            onClick={toggleDrawer(anchor, true)}>
             <MenuIcon className="icon"/>
             
           </Button>
