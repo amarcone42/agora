@@ -26,52 +26,33 @@ import Switch from '@mui/material/Switch';
 import Stack from '@mui/material/Stack';
 import Rating from "@mui/material/Rating";
 import { alpha, styled } from "@mui/material/styles";
+import '../contentpanel/ContentHomepage';
 import Link from 'next/link';
-import Searchbar from '../searchbar/Searchbar';
+import ContentChatPage from '../chatcontent/ContentChatPage';
 
-const DrawerHeader = styled('div')(({ theme }) => ({
-    display: 'flex',
-    alignItems: 'center',
-    padding: theme.spacing(0, 1),
-    // necessary for content to be below app bar
-    ...theme.mixins.toolbar,
-    justifyContent: 'flex-end',
-}));
+const drawerWidth = 240;
 
-export default function ContentHomepage () {
-
-    const CustomSwitch = styled(Switch)(({ theme }) => ({
-        '& .MuiSwitch-switchBase.Mui-checked': {
-          color: "#FFDE18",
-          '&:hover': {
-            backgroundColor: alpha("#FFDE18", theme.palette.action.hoverOpacity),
-          },
-        },
-        '& .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track': {
-          backgroundColor: "#FFDE18",
-        },
-      }));
+export default function ChatSidePanel() {
 
   return (
-    <Box id='homepageContent'>
-    <DrawerHeader>
-        <Typography variant="h6" component="div" fontWeight={'bold'} sx={{ flexGrow: 1 }} className='panel-name'>
-              Contenuti
-          </Typography>
-      </DrawerHeader>
-      <Divider />
-      <Searchbar></Searchbar>
-    <Divider className='divider'/>
-      
-       
-      <Divider />
-      <FormGroup>
-
-      </FormGroup>
-
-      <Stack   className="footer">
+    <Box sx={{ display: 'flex' }}>
+      <CssBaseline />
+      <Drawer
+        id='extra-panel'
         
-        </Stack>
-    </Box>
-  )
-}
+        sx={{
+          width: drawerWidth,
+          flexShrink: 0,
+          '& .MuiDrawer-paper': {
+            width: drawerWidth,
+            boxSizing: 'border-box',
+          },
+        }}
+        variant="permanent"
+        anchor="right"
+      >
+        <ContentChatPage/>
+       </Drawer>
+      </Box>
+  );
+  }

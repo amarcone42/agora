@@ -38,7 +38,7 @@ export default function Chat() {
       <div id="content-panel" className='panel'>
 
           <div className='secondPage' id='secondPage'>
-          
+      
           <div className="rightContainer">
             <ChatMessage className='rightelement' contenuto="Ciao Ugo, devo darti una notizia sul gruppo ambientale che seguiamo..." data="12:02" />
           </div>

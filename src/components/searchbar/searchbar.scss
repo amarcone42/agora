@@ -15,7 +15,7 @@ $font-weight-medium: 600;
     position: relative;
     width: 210px;
     height: 42px;
-    background: $primary-color;
+    background-color: var(--foreground-color) !important;
     border-radius: 30px;
     justify-content: center;
     flex-direction: row;
@@ -32,7 +32,7 @@ $font-weight-medium: 600;
     line-height: 20px;
     display: flex;
     align-items: center;
-    color: $secondary-color;
+    color: var(--secondary-color) !important;
     position: relative;
 }
 

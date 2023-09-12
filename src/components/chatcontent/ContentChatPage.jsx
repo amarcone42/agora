@@ -28,6 +28,10 @@ import Rating from "@mui/material/Rating";
 import { alpha, styled } from "@mui/material/styles";
 import Link from 'next/link';
 import Searchbar from '../searchbar/Searchbar';
+import './contentchatpage.scss';
+import Chatbox from '../chatbox/Chatbox';
+import { useRouter } from 'next/navigation'
+import ButtonCreate from '../buttoncreate/ButtonCreate';
 
 const DrawerHeader = styled('div')(({ theme }) => ({
     display: 'flex',
@@ -38,7 +42,11 @@ const DrawerHeader = styled('div')(({ theme }) => ({
     justifyContent: 'flex-end',
 }));
 
+
+
 export default function ContentHomepage () {
+
+    const router = useRouter()
 
     const CustomSwitch = styled(Switch)(({ theme }) => ({
         '& .MuiSwitch-switchBase.Mui-checked': {
@@ -55,22 +63,34 @@ export default function ContentHomepage () {
   return (
     <Box id='homepageContent'>
     <DrawerHeader>
-        <Typography variant="h6" component="div" fontWeight={'bold'} sx={{ flexGrow: 1 }} className='panel-name'>
-              Contenuti
-          </Typography>
+    <Searchbar className="searchbar"></Searchbar>
       </DrawerHeader>
       <Divider />
-      <Searchbar></Searchbar>
-    <Divider className='divider'/>
       
+    <Divider className='divider'/>
+   
        
       <Divider />
-      <FormGroup>
-
-      </FormGroup>
+      <div className='resizer'>
+      <div onClick={() => router.push('/messages')} className="sidemargin" style={{ cursor: 'pointer' }}> 
+            <Chatbox userName="Marco Rossi" messagePreview="Congratulazioni per tutto!" time="16:02" />
+            <Chatbox userName="Luigi Verdi" messagePreview="Va bene." time="15:34" />
+            <Chatbox userName="Anna Esposito" messagePreview="Ci vediamo dopo." time="15:09" />
+            <Chatbox userName="Luca Bianchi" messagePreview="Capisco, allora poi vediamo." time="14:02" />
+            <Chatbox userName="Francesco Neri" messagePreview="LOL, non me l'aspettavo!" time="13:45" />
+            <Chatbox userName="Giulia Rossi" messagePreview="Congratulazioni!" time="13:00" />
+            <Chatbox userName="Lucy Styles" messagePreview="Ti faremo sapere." time="12:56" />
+            <Chatbox userName="Mara Giorgi" messagePreview="Ne è valsa la pena." time="12:13" />
+            <Chatbox userName="Antonio Belli" messagePreview="Non ti preoccupare..." time="12:45" />
+            <Chatbox userName="Carmela Iantosca" messagePreview="Non mi sento molto bene..." time="12:30" />
+            <Chatbox userName="Franco Marcone" messagePreview="Hai fatto benissimo!" time="11:02" />
+            <Chatbox userName="Giovanna Giorgia" messagePreview="Giovedì organizzeremo la marcia!" time="11:01" />
+            <Chatbox userName="Vincenzo Rossi" messagePreview="Contaci, ti aspetto!" time="09:05" />
+            </div>
+          </div>
 
       <Stack   className="footer">
-        
+        <ButtonCreate id="fab-chat" label="SCRIVI"></ButtonCreate>
         </Stack>
     </Box>
   )

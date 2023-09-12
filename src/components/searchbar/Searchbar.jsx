@@ -8,7 +8,7 @@ const CustomIcon = ({ nameIcon: NameIcon }) => {
 
 function Searchbar() {
   return (
-    <div className="search-bar">
+    <div className="searchbar">
       <div className="rettangolo">
       <div className="icona">
        <SearchIcon className='icona'/>

@@ -10,6 +10,8 @@ import ChatIcon from '@mui/icons-material/Chat';
 import Fab from '@mui/material/Fab';
 import SearchIcon from '@mui/icons-material/Search';
 import Searchbar from '../../components/searchbar/Searchbar'
+import ChatSidePanel from '@/src/components/chatsidepanel/ChatSidePanel';
+
 
 
 
@@ -19,7 +21,7 @@ export default function SearchLayout({ children }) {
   return (
     <body className={font.className}>
      
-        <MainPanel name="Chat">
+     <MainPanel name="Chat">
         
         </MainPanel>
        
@@ -37,7 +39,7 @@ export default function SearchLayout({ children }) {
         {/*navbar Mobile in basso*/}
         
         <SimpleBottomNavigation className="bottomNavbar" id="bottomNavbar"/>
-        <SidePanel/>
+        <ChatSidePanel/>
     </body>
   );
 }
