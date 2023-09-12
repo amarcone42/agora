@@ -28,6 +28,7 @@ import TemporaryDrawer from '../temporarydrawer/TemporaryDrawer';
 import AccountMenu from '../account/AccountMenu';
 
 
+
 const drawerWidth = 240;
 const settings = ['Profilo utente', 'Crea gruppo', 'Impostazioni', 'Log out'];
 
@@ -107,6 +108,7 @@ const ResponsiveAppBar = ({ name }) => {
             >
               {name}
             </Typography>
+            
             <IconButton
               id="open-side-panel"
               color="inherit"
