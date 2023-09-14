@@ -6,15 +6,15 @@ const CustomIcon = ({ nameIcon: NameIcon }) => {
     return <NameIcon className="icona" />;
   };
 
-function Searchbar() {
+function Searchbar({ text }) {
   return (
     <div className="searchbar">
       <div className="rettangolo">
-      <div className="icona">
-       <SearchIcon className='icona'/>
+        <div className="icona">
+          <SearchIcon className='icona'/>
+        </div>
+        <div className="testo">{text}</div>
       </div>
-      <div className="testo">Cerca in Chat</div>
-    </div>
     </div>
   );
 }

@@ -110,7 +110,7 @@ const ChatResponsiveAppBar = ({ name }) => {
               {name}
             </Typography>
             <div className="chatsearchbar" id="chatsearchbar">
-            <Searchbar></Searchbar>
+            <Searchbar text='Cerca in chat'></Searchbar>
             </div>
             {/*aggiungi qui le modifiche all'appbar*/}
             <IconButton
