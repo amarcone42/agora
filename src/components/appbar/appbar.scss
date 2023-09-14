@@ -111,3 +111,45 @@
     text-decoration: underline;
   }
   
+  @media (width >= 600px) {
+    .chatsearchbar{
+        display: none !important;
+    }
+
+    #chatsearchbar{
+        display: none !important;
+    }
+
+   
+  }
+
+  @media (width < 600px) {
+    .chattitle{
+        display: none !important;
+    }
+  }
+
+  #chattoolbar{
+    justify-content: space-evenly !important;
+  }
+
+.spacer{
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: row;
+}
+
+.space{
+    
+        /* margin-right: 200px; */
+        right: 2%;
+        position: fixed;
+    
+}
+
+
+@media (width > 1200px) {
+    .space{
+        right: 21% !important;
+    }
+  }

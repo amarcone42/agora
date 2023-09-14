@@ -59,7 +59,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   justifyContent: 'flex-start',
 }));
 
-const ResponsiveAppBar = ({ name }) => {
+const ChatResponsiveAppBar = ({ name }) => {
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
@@ -84,7 +84,7 @@ const ResponsiveAppBar = ({ name }) => {
     <div>
       <AppBar elevation={0} id="responsive-header">
         <Container maxWidth="lg">
-          <Toolbar disableGutters className="toolbar">
+          <Toolbar disableGutters className="toolbar" id="chattoolbar">
             <TemporaryDrawer 
               id="temporarydrawerleft" 
               type="desktop"
@@ -103,13 +103,15 @@ const ResponsiveAppBar = ({ name }) => {
             <Typography
               variant="h6"
               noWrap
-              className="title"
+              className="chattitle"
               component="div"
               sx={{ flexGrow: 1 }}
             >
               {name}
             </Typography>
-            
+            <div className="chatsearchbar" id="chatsearchbar">
+            <Searchbar></Searchbar>
+            </div>
             {/*aggiungi qui le modifiche all'appbar*/}
             <IconButton
               id="open-side-panel"
@@ -192,4 +194,4 @@ const ResponsiveAppBar = ({ name }) => {
   );
 };
 
-export default ResponsiveAppBar;
+export default ChatResponsiveAppBar;

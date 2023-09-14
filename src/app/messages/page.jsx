@@ -11,6 +11,8 @@ import ChatMessage from '../../components/chatmessage/ChatMessage'
 import ChatRecMessage from '../../components/chatmessage/ChatRecMessage'
 import SearchLayout from './layout';
 import SimpleBottomNavigation from '../../components/navbar/Navbar'
+import MessagesResponsiveAppBar from '../../components/appbar/MessagesResponsiveAppbar'
+import Messager from '@/src/components/messager/Messager';
 
  
 export default function Chat() {
@@ -32,8 +34,8 @@ export default function Chat() {
     <main>
       {/* Mobile app bar */}
       
-      <ResponsiveAppBar name="Chat">
-      </ResponsiveAppBar>
+      <MessagesResponsiveAppBar name="Chat">
+      </MessagesResponsiveAppBar>
 
       <div id="content-panel" className='panel'>
 
@@ -63,6 +65,8 @@ export default function Chat() {
           </div>
           
         </div>
+
+        <Messager></Messager>
 
 
         </div>
