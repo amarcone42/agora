@@ -9,6 +9,7 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import './dialog.scss'
+import { useRouter } from "next/navigation";
 
 export default function LoginFormDialog() {
   const [open, setOpen] = React.useState(false);
@@ -20,6 +21,8 @@ export default function LoginFormDialog() {
   const handleClose = () => {
     setOpen(false);
   };
+
+  const router = useRouter()
 
   return (
     <div>
@@ -33,7 +36,6 @@ export default function LoginFormDialog() {
             
           </DialogContentText>
           <TextField
-            autoFocus
             margin="dense"
             id="email"
             label="Email"
@@ -42,7 +44,6 @@ export default function LoginFormDialog() {
             variant="standard"
           />
           <TextField
-            autoFocus
             margin="dense"
             id="password"
             label="Password"
@@ -54,7 +55,7 @@ export default function LoginFormDialog() {
         
         <DialogActions>
           <Button variant="outlined" onClick={handleClose}>Annulla</Button>
-          <Button variant="contained" onClick={handleClose}>Accedi</Button>
+          <Button variant="contained" onClick={() => router.push('/home')}>Accedi</Button>
         </DialogActions>
       </Dialog>
     </div>
@@ -86,7 +87,6 @@ export function RegisterFormDialog() {
             
           </DialogContentText>
           <TextField
-            autoFocus
             margin="dense"
             id="username"
             label="Nome utente"
@@ -95,7 +95,6 @@ export function RegisterFormDialog() {
             variant="standard"
           />
           <TextField
-            autoFocus
             margin="dense"
             id="email"
             label="Email"
@@ -104,7 +103,6 @@ export function RegisterFormDialog() {
             variant="standard"
           />
           <TextField
-            autoFocus
             margin="dense"
             id="password"
             label="Password"
