@@ -120,9 +120,9 @@ main {
   }
   
   #account-section {
-    margin: 0;
+    margin: 0 auto;
     padding: 0 20px;
-    width: 360px;
+    width: 300px;
     .xxl-text {
       font-size:xx-large;
     }
@@ -164,6 +164,7 @@ main {
     #account-section {
       margin-left: auto;
       margin-right: 0;
+      width: 380px;
     }
   }
 }
