@@ -1,6 +1,9 @@
+//CSS variables for main theme
 :root {
+  //System pure colors
   --white:#FFFFFF;
 
+  //System main colors
   --neutral-color: var(--white);
   --neutral-color-dark: #FAFAFA;
   --secondary-color: #EBEBEB;
@@ -10,6 +13,12 @@
   --accent-color-tonal: #ffdc182b;
   --shadow: rgba(51, 50, 52, 0.5);
 
+  //System text colors
+  --main-text-color: var(--foreground-color);
+  --filter-text: invert(16%) sepia(1%) saturate(3061%) hue-rotate(233deg) brightness(97%) contrast(88%);
+
+
+  //System custom parameters
   --border-radius-md: 12px;
 
   --navrail-small: 64px;
@@ -21,13 +30,19 @@
   --break-xl: 1536px;
 }
 
+//CSS variables for dark theme
 @media (prefers-color-scheme: dark) {
   :root {
+    //System main colors
     --neutral-color:#1F1E1F;
     --neutral-color-dark: #242324;
     --secondary-color: #262627;
     --foreground-color: var(--white);
     --accent-color: #FFDE18;
+
+    //System text colors
+    --main-text-color: var(--foreground-color);
+    --filter-text: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
   }
 }
 
@@ -117,85 +132,4 @@ main {
 }
 .MuiButton-containedPrimary:hover {
   background-color: var(--accent-color);
-}
-
-
-#login-page {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  color: var(--foreground-color);
-  #company-section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    #company-logo {
-      margin: 0;
-      padding: 0;
-      width: 100px;
-      color: var(--foreground-color);
-    }
-  }
-  
-  #account-section {
-    margin: 0 auto;
-    padding: 0 20px;
-    width: 300px;
-    .xxl-text {
-      font-size:xx-large;
-    }
-    button {
-      margin: 10px auto 10px auto;
-      width: 300px;
-      font-weight: bold;
-      font-size: medium;
-    }
-    .MuiButton-filled {
-      color: var(--white);
-      background-color: var(--accent-color);
-    }
-    .MuiButton-outlined {
-      color: var(--accent-color);
-    }
-    .MuiButton-outlined:hover {
-      background-color: var(--accent-color-tonal);
-    }
-    hr {
-      margin: 15px 0px;
-      color: transparent;
-    }
-  }
-}
-
-@media (width > 600px) {
-  #login-page {
-    display: flex;
-    flex-direction: row;
-    #company-section {
-      flex-direction: column;
-      #company-logo {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-      }
-    }
-    #account-section {
-      margin-left: auto;
-      margin-right: 0;
-      width: 380px;
-    }
-  }
-}
-
-@media (width > 800px) {
-  #login-page {
-    #company-section {
-      #company-logo {
-        width: 400px;
-      }
-    }
-  }
 }
