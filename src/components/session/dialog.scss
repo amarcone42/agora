@@ -1,0 +1,30 @@
+
+
+.dialog-card {
+    .MuiPaper-root{
+        border-radius: var(--border-radius-md);
+        color: var(--foreground-color);
+        background-color: var(--neutral-color);
+        p {
+            color: var(--foreground-color);
+        }
+        label {
+            color: var(--foreground-color);
+        }
+        input {
+            color: var(--foreground-color);
+        }
+        .MuiInput-underline::before {
+            border-bottom-color: var(--foreground-color);
+        }
+        .MuiInput-underline::after {
+            border-bottom-color: var(--accent-color);
+        }
+        .MuiInputLabel-root.Mui-focused {
+            color: var(--accent-color);
+        }
+
+        
+    }
+}
+

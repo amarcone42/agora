@@ -1,0 +1,91 @@
+#login-page {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	color: var(--foreground-color);
+	#company-section {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		#company-logo {
+			margin: 0;
+			padding: 0;
+			width: 100px;
+			filter: var(--filter-text);
+			color: var(--foreground-color);
+		}
+	}
+	
+	#account-section {
+		margin: 0 auto;
+		padding: 0 20px;
+		width: 300px;
+		.xxl-text {
+			font-size:xx-large;
+		}
+		button {
+			margin: 10px auto 10px auto;
+			width: 300px;
+			font-weight: bold;
+			font-size: medium;
+		}
+		.MuiButton-filled {
+			color: var(--white);
+			background-color: var(--accent-color);
+		}
+		.MuiButton-outlined {
+			color: var(--accent-color);
+		}
+		.MuiButton-outlined:hover {
+			background-color: var(--accent-color-tonal);
+		}
+		hr {
+			margin: 15px 0px;
+			color: transparent;
+		}
+	}
+}
+
+@media (width > 600px) {
+	#login-page {
+		display: flex;
+		flex-direction: row;
+		#company-section {
+			flex-direction: column;
+			#company-logo {
+				margin: 0;
+				padding: 0;
+				width: 100%;
+			}
+		}
+		#account-section {
+			margin-left: auto;
+			margin-right: 0;
+			width: 380px;
+		}
+	}
+}
+
+@media (width > 800px) {
+	#login-page {
+		#company-section {
+			#company-logo {
+				width: 400px;
+			}
+		}
+		#account-section {
+			margin-right: 2%;
+		}
+	}
+}
+
+@media (width > 1200px) {
+	#login-page {
+		#account-section {
+			margin-right: 6%;
+		}
+	}
+}
