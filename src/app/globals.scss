@@ -98,6 +98,27 @@ main {
   }
 }
 
+//Modifiche per adattare lo stile del pulsante base al Material 3
+.MuiButtonBase-root {
+  border-radius: 100px !important;
+  text-transform: none !important;
+}
+
+.MuiButton-outlined {
+  color: var(--accent-color);
+  border: 1px solid var(--md-sys-color-outline, var(--md-ref-palette-neutralVariant-50, #79747e)) !important;
+}
+.MuiButton-outlined:hover {
+  background-color: var(--accent-color-transparent);
+}
+.MuiButton-containedPrimary {
+  background-color: var(--accent-color);
+  border: 0 !important;
+}
+.MuiButton-containedPrimary:hover {
+  background-color: var(--accent-color);
+}
+
 
 #login-page {
   padding: 0;
