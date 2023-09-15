@@ -1,0 +1,35 @@
+/* Rectangle 11 */
+.searchbar{
+    position: relative;
+}
+
+.rettangolo {
+    position: relative;
+    width: 210px;
+    height: 42px;
+    background-color: var(--secondary-color) !important;
+    border-radius: 30px;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.testo {
+    left: -20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    color: var(--foreground-color) !important;
+    position: relative;
+}
+
+.icona {
+    right: 12.56%;
+    top: 9%;
+    color: var(--foreground-color) !important;
+    position: relative;
+}

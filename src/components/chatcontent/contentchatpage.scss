@@ -1,18 +1,7 @@
-.MuiPaper-root{
-    color: var(--foreground-color)!important;
-    background-color: var(--neutral-color)!important;
-}
 
-#temporarydrawerright {
-    margin-left: 14px;
-}
-
-#temporarydrawerleft {
-    margin-left: 10px;
-}
 
 #hamburgericonleft, #hamburgericonright{
-    color: var(--foreground-color) !important;
+    color: var(--foreground-color);
 }
 
 @media (width <= 600px) {
@@ -71,4 +60,33 @@
 
 .customRating{
     margin-right: 10px;
+}
+
+.searchbar{
+    margin-left: 10px; 
+}
+
+@media (width > 600px) AND (width < 1200px) {
+    .searchbar{
+        left: -19px;
+    }
+}
+
+@media (width > 1200px) {
+    .searchbar{
+        left: -5px;
+    }
+}
+
+.resizer {
+    position: relative;
+    transform: scale(0.6);
+    margin-left: -50px;
+    margin-top: -230px;
+}
+
+#fab-chat{
+    bottom: 10px;
+    right: 25px; 
+    position: fixed;
 }

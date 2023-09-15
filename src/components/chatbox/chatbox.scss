@@ -1,0 +1,77 @@
+.chat-1 {
+  position: relative;
+  width: 360px;
+  height: 80px;
+  left: 0px;
+  top: 8px;
+
+  /* Post background */
+  .post-background {
+    position: absolute;
+    left: 2.78%;
+    right: 2.78%;
+    top: 5%;
+    bottom: 7.5%;
+    background-color: var(--secondary-color) !important;
+    border-radius: 10px;
+  }
+
+  /* PersonCircle */
+  .person-circle {
+    position: absolute;
+    left: 5.56%;
+    right: 80.56%;
+    top: 17.5%;
+    bottom: 20%;
+  }
+
+ .icon {
+    position: relative;
+    right: 20.56%;
+    bottom: 5%;
+    font-size: 50px;
+    color: var(--foreground-color) !important;
+  }
+
+  
+
+  /* User Name */
+  .user-name {
+    position: absolute;
+    left: 23.33%;
+    right: 21.11%;
+    top: 20%;
+    bottom: 57.5%;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--foreground-color) !important;
+  }
+
+  /* Anteprima Messaggio */
+  .anteprima-messaggio {
+    position: absolute;
+    left: 23.33%;
+    right: 6.39%;
+    top: 48.75%;
+    bottom: 21.25%;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--foreground-color) !important;
+  }
+
+  /* Date */
+  .date {
+    position: absolute;
+    left: 82.78%;
+    right: 5.56%;
+    top: 22.5%;
+    bottom: 60%;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--foreground-color) !important;
+  }
+}

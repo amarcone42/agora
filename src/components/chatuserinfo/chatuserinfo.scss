@@ -1,0 +1,94 @@
+.user-info {
+    position: absolute;
+    width: 253px;
+    height: 64px;
+    left: 41px;
+    top: 9px;
+  }
+  
+  .user-details {
+    /* margin-right: 50px; */
+    position: absolute;
+    width: 133px;
+    height: 15px;
+    left: 75px;
+    top: 54px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: var(--secondary-color);
+}
+  
+  .user-identifier {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: var(--secondary-color);
+  }
+  
+  .user-name {
+    /* margin-right: 0px; */
+    margin-bottom: 110px;
+    /* position: absolute; */
+    width: 176px;
+    height: 30px;
+    left: 158px;
+    top: 13px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    color: var(--foreground-color);
+}
+  
+  .user-image {
+    margin-top: -9px;
+    border-radius: 100px;
+    /* position: absolute; */
+    width: 64px;
+    height: 64px;
+    /* left: 81px; */
+    /* top: 9px; */
+    color: var(--foreground-color);
+}
+  
+.user-status {
+    margin-left: -176px;
+    left: -40px;
+    margin-bottom: 50px;
+    /* position: absolute; */
+    left: 2.38%;
+    right: 5.95%;
+    top: 2.38%;
+    bottom: 21.43%;
+    color: var(--foreground-color);
+}
+  
+  .user-status .status-text {
+    color: var(--secondary-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-identifier .identifier-text {
+    color: var(--secondary-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+  }
+  

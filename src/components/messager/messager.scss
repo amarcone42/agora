@@ -1,0 +1,104 @@
+/* Sezione Invia Messaggi */
+.position-absolute {
+    position: absolute;
+  }
+  
+  .sezione-invia-messaggi {
+    width: 360px;
+    height: 70px;
+    bottom: 0px;
+    background: var(--neutral-color);
+  }
+  
+  /* WriteBox */
+  .write-box {
+    width: 72%;
+    height: 42px;
+    left: 55px;
+    top: 14px;
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+  }
+  
+  /* Prompt */
+  .prompt {
+    width: 235.48px;
+    height: 42px;
+    left: 70.66px;
+    top: 14px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: var(--foreground-color);
+  }
+  
+  
+  
+  
+  
+  /* Paperclip */
+  .paperclip {
+    width: 32px;
+    height: 32px;
+    margin-left: 14px;
+    margin-top: 19px;
+    color: var(--foreground-color);
+  }
+  
+ 
+  
+  
+  
+  
+  
+  /* Invia */
+  .invia {
+    left: 90.56%;
+    right: 7.78%;
+    top: 32.86%;
+    bottom: 32.86%;
+    color: var(--foreground-color);
+  }
+  
+  
+  
+  
+
+  .sezione-invia-messaggi {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+
+  @media (width > 600px) AND (width <= 900px){
+    .sezione-invia-messaggi{
+        width: 90.5%;
+    }
+
+    .write-box {
+        width: 78%;
+    }
+  }
+
+  @media (width > 900px) AND (width < 1200px){
+    .sezione-invia-messaggi{
+        width: 77.5%;
+    }
+
+    .write-box {
+        width: 81%;
+    }
+  }
+
+  @media (width > 1200px) {
+    .sezione-invia-messaggi{
+        width: 60.5%;
+    }
+
+    .write-box {
+        width: 81%;
+    }
+  }

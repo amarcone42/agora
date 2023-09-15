@@ -28,19 +28,18 @@ import Rating from "@mui/material/Rating";
 import { alpha, styled } from "@mui/material/styles";
 import '../contentpanel/ContentHomepage';
 import Link from 'next/link';
-import ContentHomepage from '../contentpanel/ContentHomepage';
 import ContentChatPage from '../chatcontent/ContentChatPage';
 
 const drawerWidth = 240;
 
-export default function SidePanel() {
+export default function ChatSidePanel() {
 
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <Drawer
         id='extra-panel'
-        className='side-panel'
+        
         sx={{
           width: drawerWidth,
           flexShrink: 0,
@@ -52,7 +51,7 @@ export default function SidePanel() {
         variant="permanent"
         anchor="right"
       >
-        <ContentHomepage/>
+        <ContentChatPage/>
        </Drawer>
       </Box>
   );
