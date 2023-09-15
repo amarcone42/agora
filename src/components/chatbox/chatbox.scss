@@ -1,13 +1,3 @@
-/* Chat 1 */
-
-$primary-color: #EBEBEB;
-$secondary-color: #333234;
-$neutral-color: #FFFFFF;
-
-$font-family: 'Open Sans';
-$font-weight-bold: 700;
-$font-weight-medium: 600;
-
 .chat-1 {
   position: relative;
   width: 360px;
@@ -22,7 +12,7 @@ $font-weight-medium: 600;
     right: 2.78%;
     top: 5%;
     bottom: 7.5%;
-    background: $primary-color;
+    background-color: var(--secondary-color) !important;
     border-radius: 10px;
   }
 
@@ -40,7 +30,7 @@ $font-weight-medium: 600;
     right: 20.56%;
     bottom: 5%;
     font-size: 50px;
-    color: $secondary-color;
+    color: var(--foreground-color) !important;
   }
 
   
@@ -52,12 +42,11 @@ $font-weight-medium: 600;
     right: 21.11%;
     top: 20%;
     bottom: 57.5%;
-    font-family: $font-family;
+    font-weight: bold;
     font-style: normal;
-    font-weight: $font-weight-bold;
     font-size: 15px;
     line-height: 20px;
-    color: $secondary-color;
+    color: var(--foreground-color) !important;
   }
 
   /* Anteprima Messaggio */
@@ -67,12 +56,10 @@ $font-weight-medium: 600;
     right: 6.39%;
     top: 48.75%;
     bottom: 21.25%;
-    font-family: $font-family;
     font-style: normal;
-    font-weight: $font-weight-medium;
     font-size: 12px;
     line-height: 16px;
-    color: $secondary-color;
+    color: var(--foreground-color) !important;
   }
 
   /* Date */
@@ -82,11 +69,9 @@ $font-weight-medium: 600;
     right: 5.56%;
     top: 22.5%;
     bottom: 60%;
-    font-family: $font-family;
     font-style: normal;
-    font-weight: $font-weight-medium;
     font-size: 14px;
     line-height: 19px;
-    color: $secondary-color;
+    color: var(--foreground-color) !important;
   }
 }

@@ -29,6 +29,7 @@ import { alpha, styled } from "@mui/material/styles";
 import '../contentpanel/ContentHomepage';
 import Link from 'next/link';
 import ContentHomepage from '../contentpanel/ContentHomepage';
+import ContentChatPage from '../chatcontent/ContentChatPage';
 
 const drawerWidth = 240;
 

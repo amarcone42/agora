@@ -6,9 +6,8 @@
   .sezione-invia-messaggi {
     width: 360px;
     height: 70px;
-    
     bottom: 0px;
-    background: #FFFFFF;
+    background: var(--neutral-color);
   }
   
   /* WriteBox */
@@ -17,7 +16,7 @@
     height: 42px;
     left: 55px;
     top: 14px;
-    background: #EBEBEB;
+    background-color: var(--secondary-color);
     border-radius: 50px;
   }
   
@@ -27,14 +26,13 @@
     height: 42px;
     left: 70.66px;
     top: 14px;
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
     display: flex;
     align-items: center;
-    color: #333234;
+    color: var(--foreground-color);
   }
   
   
@@ -47,7 +45,7 @@
     height: 32px;
     margin-left: 14px;
     margin-top: 19px;
-    color: var(--secondary-color);
+    color: var(--foreground-color);
   }
   
  
@@ -62,7 +60,7 @@
     right: 7.78%;
     top: 32.86%;
     bottom: 32.86%;
-    color: var(--secondary-color);
+    color: var(--foreground-color);
   }
   
   

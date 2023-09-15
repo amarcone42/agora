@@ -153,3 +153,9 @@
         right: 21% !important;
     }
   }
+
+  @media (width < 600px) {
+    .mobilechatdrawer{
+        display: none !important;
+    }
+  }

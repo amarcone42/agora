@@ -29,8 +29,8 @@ export default function Chat() {
       <div id="content-panel" className='panel'>
 
       <div class="center-box">
-  <h3 class="selectconvo">Seleziona una chat per aprire la conversazione</h3>
-</div>
+      <div class="selectconvo"><h3 class='testoChat1'>Seleziona una chat per aprire la conversazione</h3></div>
+      </div>
           <div className='firstPage' id='firstPage'>
             
          

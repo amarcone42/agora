@@ -1,11 +1,3 @@
-$primary-color: #EBEBEB;
-$secondary-color: #333234;
-$neutral-color: #FFFFFF;
-
-$font-family: 'Open Sans';
-$font-weight-bold: 700;
-$font-weight-medium: 600;
-
 /* Rectangle 11 */
 .searchbar{
     position: relative;
@@ -15,7 +7,7 @@ $font-weight-medium: 600;
     position: relative;
     width: 210px;
     height: 42px;
-    background-color: var(--foreground-color) !important;
+    background-color: var(--secondary-color) !important;
     border-radius: 30px;
     justify-content: center;
     flex-direction: row;
@@ -25,20 +17,19 @@ $font-weight-medium: 600;
 
 .testo {
     left: -20px;
-    font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 15px;
-    line-height: 20px;
+    line-height: 15px;
     display: flex;
     align-items: center;
-    color: var(--secondary-color) !important;
+    color: var(--foreground-color) !important;
     position: relative;
 }
 
 .icona {
     right: 12.56%;
     top: 9%;
-    color: $secondary-color;
+    color: var(--foreground-color) !important;
     position: relative;
 }

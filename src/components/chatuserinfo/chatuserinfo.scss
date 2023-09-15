@@ -13,7 +13,6 @@
     height: 15px;
     left: 75px;
     top: 54px;
-    font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -24,14 +23,13 @@
 }
   
   .user-identifier {
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
     display: flex;
     align-items: center;
-    color: #333234;
+    color: var(--secondary-color);
   }
   
   .user-name {
@@ -42,7 +40,6 @@
     height: 30px;
     left: 158px;
     top: 13px;
-    font-family: "Open Sans";
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -76,8 +73,7 @@
 }
   
   .user-status .status-text {
-    color: #333234;
-    font-family: 'Open Sans';
+    color: var(--secondary-color);
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -87,8 +83,7 @@
   }
   
   .user-identifier .identifier-text {
-    color: #333234;
-    font-family: 'Open Sans';
+    color: var(--secondary-color);
     font-style: normal;
     font-weight: 400;
     font-size: 15px;

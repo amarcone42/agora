@@ -86,6 +86,13 @@
         }
 }
 
+@media (width > 600px) {
+.hidden {
+    height:51px;
+    visibility: hidden !important;
+    position: relative;
+    }
+}
 /*
 @media (width < 600px) {
     .title{

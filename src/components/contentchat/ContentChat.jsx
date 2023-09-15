@@ -55,9 +55,7 @@ export default function ContentHomepage () {
   return (
     <Box id='homepageContent'>
     <DrawerHeader>
-        <Typography variant="h6" component="div" fontWeight={'bold'} sx={{ flexGrow: 1 }} className='panel-name'>
-              Contenuti
-          </Typography>
+        
       </DrawerHeader>
       <Divider />
       <Searchbar></Searchbar>

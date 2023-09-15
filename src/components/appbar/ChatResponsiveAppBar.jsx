@@ -24,7 +24,7 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import './appbar.scss';
-import TemporaryDrawer from '../temporarydrawer/TemporaryDrawer';
+import TemporaryChatDrawer from '../temporarydrawer/TemporaryChatDrawer';
 import AccountMenu from '../account/AccountMenu';
 import Searchbar from '../searchbar/Searchbar';
 
@@ -85,7 +85,8 @@ const ChatResponsiveAppBar = ({ name }) => {
       <AppBar elevation={0} id="responsive-header">
         <Container maxWidth="lg">
           <Toolbar disableGutters className="toolbar" id="chattoolbar">
-            <TemporaryDrawer 
+            <div className='mobilechatdrawer'>
+            <TemporaryChatDrawer 
               id="temporarydrawerleft" 
               type="desktop"
             >
@@ -99,7 +100,8 @@ const ChatResponsiveAppBar = ({ name }) => {
               >
                 <MenuIcon />
               </IconButton>
-            </TemporaryDrawer>
+            </TemporaryChatDrawer>
+            </div>
             <Typography
               variant="h6"
               noWrap
@@ -121,7 +123,7 @@ const ChatResponsiveAppBar = ({ name }) => {
               onClick={handleDrawerOpen}
               sx={{ ...(open && { display: 'none' }) }}
             ></IconButton>
-            <TemporaryDrawer  
+            <TemporaryChatDrawer  
               id="temporarydrawerright"
               type="mobile" 
             >
@@ -135,7 +137,7 @@ const ChatResponsiveAppBar = ({ name }) => {
               >
                 <MenuIcon />
               </IconButton>
-            </TemporaryDrawer>
+            </TemporaryChatDrawer>
             <AccountMenu type="mobile" />
           </Toolbar>
         </Container>

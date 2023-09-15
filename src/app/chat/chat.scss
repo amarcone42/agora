@@ -26,9 +26,14 @@
     border-radius: 20px;
     
 }
-
-.selectconvo{
+.testoChat1 {
+    color: var(--foreground-color);
     margin: 6px;
+}
+.selectconvo{
+    border-radius:  15px;
+    background-color: var(--neutral-color-dark);
+    text-decoration: var(--secondary-color);
 }
 
 }

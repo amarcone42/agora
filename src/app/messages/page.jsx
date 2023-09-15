@@ -64,8 +64,9 @@ export default function Chat() {
             <ChatRecMessage className='leftelement' contenuto="Va bene, Ugo. Sono contento della tua passione sull’ argomento e di quanto tu ci tenga alla mia compagnia, per cui mi impegnerò per riuscire a partecipare a questo evento!" data="12:42" />
           </div>
           
+          <div className='hidden'></div>
         </div>
-
+        
         <Messager></Messager>
 
 
