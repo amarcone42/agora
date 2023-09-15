@@ -41,7 +41,7 @@ export default function LoginFormDialog() {
             label="Email"
             type="email"
             fullWidth
-            variant="standard"
+            variant="filled"
           />
           <TextField
             margin="dense"
@@ -49,7 +49,7 @@ export default function LoginFormDialog() {
             label="Password"
             type="password"
             fullWidth
-            variant="standard"
+            variant="filled"
           />
         </DialogContent>
         
@@ -92,7 +92,7 @@ export function RegisterFormDialog() {
             label="Nome utente"
             type="username"
             fullWidth
-            variant="standard"
+            variant="filled"
           />
           <TextField
             margin="dense"
@@ -100,7 +100,7 @@ export function RegisterFormDialog() {
             label="Email"
             type="email"
             fullWidth
-            variant="standard"
+            variant="filled"
           />
           <TextField
             margin="dense"
@@ -108,7 +108,7 @@ export function RegisterFormDialog() {
             label="Password"
             type="password"
             fullWidth
-            variant="standard"
+            variant="filled"
           />
         </DialogContent>
         
