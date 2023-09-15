@@ -16,6 +16,16 @@ import GroupAddIcon from '@mui/icons-material/GroupAdd';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
 
+//dialog imports
+import '../session/dialog.scss'
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
+
 export default function AccountMenu(type) {
   var buttonid = "user-account-mobile";
   var menuid = "account-menu-mobile";
@@ -39,7 +49,67 @@ export default function AccountMenu(type) {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+
+
+  const [state, setOpenDialog] = React.useState(false);
+  
+  const handleDialogClickOpen = () => {
+    setOpenDialog(true);
+  };
+
+  const handleDialogClose = () => {
+    setOpenDialog(false);
+  };
+  const CreateGroupDialog = () => {
+    
+    return (
+      <Dialog open={state} onClose={handleDialogClose} className='dialog-card'>
+        <DialogTitle>Crea gruppo</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            
+          </DialogContentText>
+          <TextField
+            margin="dense"
+            id="groupname"
+            label="Nome"
+            type="text"
+            fullWidth
+            variant="filled"
+          />
+          <TextField
+            margin="dense"
+            id="idgroup"
+            label="Identificativo"
+            type="text"
+            fullWidth
+            variant="filled"
+          />
+          <TextField
+            margin="dense"
+            id="groupdescription"
+            label="Descrizione"
+            type="text"
+            fullWidth
+            multiline
+            rows={4}
+            variant="filled"
+          />
+        </DialogContent>
+        
+        <DialogActions>
+          <Button variant="outlined" onClick={handleDialogClose}>Annulla</Button>
+          <Button variant="contained" onClick={() => router.push('/home')}>Crea</Button>
+        </DialogActions>
+      </Dialog>
+    );
+  }
+
+
+
   return (
+    <div>
     <React.Fragment>
       <Box id={buttonid} className='user-account-icon' sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
         <Tooltip title="Account settings">
@@ -114,7 +184,7 @@ export default function AccountMenu(type) {
             </ListItemIcon>
             Profilo utente
           </MenuItem>
-          <MenuItem onClick={handleClose}>
+          <MenuItem onClick={handleDialogClickOpen}>
             <ListItemIcon className='icon'>
               <GroupAddIcon fontSize="small" />
             </ListItemIcon>
@@ -135,5 +205,8 @@ export default function AccountMenu(type) {
         </div>
       </Menu>
     </React.Fragment>
+    <CreateGroupDialog/>
+    </div>
   );
 }
+
