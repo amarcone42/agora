@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './searchbar.scss'; 
 import SearchIcon from '@mui/icons-material/Search';
@@ -20,3 +21,4 @@ function Searchbar({ text }) {
 }
 
 export default Searchbar;
+
