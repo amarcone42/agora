@@ -253,102 +253,102 @@ export default function AccountMenu(type) {
 
   return (
     <div>
-    <React.Fragment>
-      <Box id={buttonid} className='user-account-icon' sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
-        <Tooltip title="Account settings">
-          <IconButton
-            onClick={handleClick}
-            size="small"
-            sx={{ ml: 2 }}
-            aria-controls={open ? menuid : undefined}
-            aria-haspopup="true"
-            aria-expanded={open ? 'true' : undefined}
-          >
-            <Avatar className='profile-icon'>M</Avatar>
-            <Typography flexWrap={1}
-                className='username'
-                variant="h6"
+      <React.Fragment>
+        <Box id={buttonid} className='user-account-icon' sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
+          <Tooltip title="Account settings">
+            <IconButton
+              onClick={handleClick}
+              size="small"
+              sx={{ ml: 2 }}
+              aria-controls={open ? menuid : undefined}
+              aria-haspopup="true"
+              aria-expanded={open ? 'true' : undefined}
             >
-            Michele Sorrentino
-            </Typography>
-          </IconButton>
-        </Tooltip>
-      </Box>
-      <Menu
-        anchorEl={anchorEl}
-        id={menuid}
-        class='user-account-menu'
-        open={open}
-        onClose={handleClose}
-        onClick={handleClose}
-        PaperProps={{
-          elevation: 0,
-          sx: {
-            overflow: 'visible',
-            filter: 'drop-shadow(0px 2px 8px rgba(0,0,0,0.32))',
-            mt: 1.5,
-            '& .MuiAvatar-root': {
-              width: 32,
-              height: 32,
-              ml: -0.5,
-              mr: 1,
+              <Avatar className='profile-icon'>M</Avatar>
+              <Typography flexWrap={1}
+                  className='username'
+                  variant="h6"
+              >
+              Michele Sorrentino
+              </Typography>
+            </IconButton>
+          </Tooltip>
+        </Box>
+        <Menu
+          anchorEl={anchorEl}
+          id={menuid}
+          class='user-account-menu'
+          open={open}
+          onClose={handleClose}
+          onClick={handleClose}
+          PaperProps={{
+            elevation: 0,
+            sx: {
+              overflow: 'visible',
+              filter: 'drop-shadow(0px 2px 8px rgba(0,0,0,0.32))',
+              mt: 1.5,
+              '& .MuiAvatar-root': {
+                width: 32,
+                height: 32,
+                ml: -0.5,
+                mr: 1,
+              },
+              '&:before': {
+                content: '""',
+                display: 'block',
+                position: 'absolute',
+                top: 0,
+                right: 14,
+                width: 10,
+                height: 10,
+                bgcolor: 'transparent',
+                transform: 'translateY(-50%) rotate(45deg)',
+                zIndex: 0,
+              },
             },
-            '&:before': {
-              content: '""',
-              display: 'block',
-              position: 'absolute',
-              top: 0,
-              right: 14,
-              width: 10,
-              height: 10,
-              bgcolor: 'transparent',
-              transform: 'translateY(-50%) rotate(45deg)',
-              zIndex: 0,
-            },
-          },
-        }}
-        transformOrigin={{ horizontal: originhorizontal, vertical: originvertical }}
-        anchorOrigin={{ horizontal: originhorizontal, vertical: originvertical }}
-      >
-        <MenuItem className='title' onClick={handleClose}>
-            <Typography 
-                className='username'
-                variant="h6"
-            >
-            Michele Sorrentino
-            </Typography>
-            <Avatar className="profile-icon"/> 
-        </MenuItem>
-        <Divider />
-        <div>
-          <MenuItem onClick={handleClose}>
-            <ListItemIcon className='icon'>
-              <PersonIcon fontSize="small" />
-            </ListItemIcon>
-            Profilo utente
+          }}
+          transformOrigin={{ horizontal: originhorizontal, vertical: originvertical }}
+          anchorOrigin={{ horizontal: originhorizontal, vertical: originvertical }}
+        >
+          <MenuItem className='title' onClick={handleClose}>
+              <Typography 
+                  className='username'
+                  variant="h6"
+              >
+              Michele Sorrentino
+              </Typography>
+              <Avatar className="profile-icon"/> 
           </MenuItem>
-          <MenuItem onClick={handleDialogClickOpen}>
-            <ListItemIcon className='icon'>
-              <GroupAddIcon fontSize="small" />
-            </ListItemIcon>
-            Crea gruppo
-          </MenuItem>
-          <MenuItem onClick={handleClose}>
-            <ListItemIcon className='icon'>
-              <Settings fontSize="small" />
-            </ListItemIcon>
-            Impostazioni
-          </MenuItem>
-          <MenuItem onClick={handleClose}>
-            <ListItemIcon className='icon'>
-              <Logout fontSize="small" />
-            </ListItemIcon>
-            Logout
-          </MenuItem>
-        </div>
-      </Menu>
-    </React.Fragment>
-    <CreateGroupDialog/>
+          <Divider />
+          <div>
+            <MenuItem onClick={handleClose}>
+              <ListItemIcon className='icon'>
+                <PersonIcon fontSize="small" />
+              </ListItemIcon>
+              Profilo utente
+            </MenuItem>
+            <MenuItem onClick={handleDialogClickOpen}>
+              <ListItemIcon className='icon'>
+                <GroupAddIcon fontSize="small" />
+              </ListItemIcon>
+              Crea gruppo
+            </MenuItem>
+            <MenuItem onClick={handleClose}>
+              <ListItemIcon className='icon'>
+                <Settings fontSize="small" />
+              </ListItemIcon>
+              Impostazioni
+            </MenuItem>
+            <MenuItem onClick={handleClose}>
+              <ListItemIcon className='icon'>
+                <Logout fontSize="small" />
+              </ListItemIcon>
+              Logout
+            </MenuItem>
+          </div>
+        </Menu>
+      </React.Fragment>
+      <CreateGroupDialog/>
     </div>
   );
 }

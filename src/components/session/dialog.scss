@@ -9,6 +9,11 @@
         color: var(--foreground-color);
         background-color: var(--neutral-color);
 
+        .MuiDialogActions-root {
+            padding-left: 24px;
+            padding-right: 24px;
+            padding-bottom: 16px;
+        }
         p {
             color: var(--foreground-color);
         }
