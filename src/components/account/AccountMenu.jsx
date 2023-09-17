@@ -243,7 +243,7 @@ export default function AccountMenu(type) {
         
         <DialogActions>
           <Button variant="outlined" onClick={handleDialogClose}>Annulla</Button>
-          <Button variant="contained" className='submit' onClick={() => router.push('/home')}>Crea</Button>
+          <Button variant="contained" className='submit' onClick={handleDialogClose}>Crea</Button>
         </DialogActions>
       </Dialog>
     );
