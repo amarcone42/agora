@@ -1,35 +1,54 @@
-/* Rectangle 11 */
-.searchbar{
-    position: relative;
-}
-
-.rettangolo {
-    position: relative;
-    width: 210px;
-    height: 42px;
-    background-color: var(--secondary-color) !important;
-    border-radius: 30px;
-    justify-content: center;
+.box{
+    background: var(--secondary-color);
     flex-direction: row;
+    height: 40px;
+    width: 100%;
+    border-radius: 1%;
+    align-items: baseline ;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px 15px 15px 15px;
+
+    .bottom-groups{
+        margin-bottom: 15px;
+        color: var(--foreground-color);
+        background: none;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        justify-content: flex-end; /* Aggiunto per posizionare a destra */
+   
+
+        .bott{
+            margin-bottom: 15px;
+            margin-right: 35px;
+            padding: 10px;
+            border-radius: 50px;
+            width: 15%;
+            height: 10%;
+            display: flex;
+        }
+    
+    }
 }
 
-.testo {
-    left: -20px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 15px;
+.search{
+    margin-bottom: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    border-radius: 50px;
+    width: 15%;
+    height: 10%;
     display: flex;
-    align-items: center;
-    color: var(--foreground-color) !important;
-    position: relative;
+    margin-left: 180px;
 }
 
-.icona {
-    right: 12.56%;
-    top: 9%;
-    color: var(--foreground-color) !important;
-    position: relative;
+
+@media (width <= 1200px) {
+
+    .bottom-groups {
+        display: none !important;
+    }
+  
 }
