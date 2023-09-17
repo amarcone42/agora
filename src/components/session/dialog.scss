@@ -1,10 +1,14 @@
 
 
 .dialog-card {
+    .text-custom-format{
+        background-color: var(--secondary-color)!important;
+    }
     .MuiPaper-root{
         border-radius: var(--border-radius-md);
         color: var(--foreground-color);
         background-color: var(--neutral-color);
+
         p {
             color: var(--foreground-color);
         }
@@ -46,6 +50,24 @@
             border-bottom: 2px solid var(--accent-color);
         }
         
+        //radio buttons style
+        .MuiRadio-root {
+            color: var(--foreground-color);
+        }
+        .MuiRadio-root.Mui-checked {
+            color: var(--accent-color);
+        }
+        .MuiCheckbox-root {
+            color: var(--foreground-color);
+        }
+        .MuiCheckbox-root.Mui-checked {
+            color: var(--accent-color);
+        }
+
+        .MuiToggleButton-root.Mui-selected{
+            border-radius: var(--border-radius-md)!important;
+            background-color: var(--accent-color);
+        }
     }
 }
 
