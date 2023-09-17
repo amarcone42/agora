@@ -2,16 +2,10 @@
 import * as React from 'react';
 import { styled, useTheme } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
@@ -24,7 +18,7 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import './appbar.scss';
-import TemporaryChatDrawer from '../temporarydrawer/TemporaryChatDrawer';
+import TemporaryDrawer from '../temporarydrawer/TemporaryDrawer';
 import AccountMenu from '../account/AccountMenu';
 import Searchbar from '../searchbar/Searchbar';
 
@@ -58,7 +52,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   justifyContent: 'flex-start',
 }));
 
-const ChatResponsiveAppBar = ({ name }) => {
+const Activityappbar = ({ name }) => {
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
@@ -83,9 +77,8 @@ const ChatResponsiveAppBar = ({ name }) => {
     <div>
       <AppBar elevation={0} id="responsive-header">
         <Container maxWidth="lg">
-          <Toolbar disableGutters className="toolbar" id="chattoolbar">
-            <div className='mobilechatdrawer'>
-            <TemporaryChatDrawer 
+          <Toolbar disableGutters className="toolbar">
+            <TemporaryDrawer 
               id="temporarydrawerleft" 
               type="desktop"
             >
@@ -99,23 +92,11 @@ const ChatResponsiveAppBar = ({ name }) => {
               >
                 <MenuIcon />
               </IconButton>
-            </TemporaryChatDrawer>
-            </div>
-            <Typography
-              variant="h6"
-              noWrap
-              className="chattitle"
-              component="div"
-              sx={{ flexGrow: 1 }}
-            >
-              {name}
-            </Typography>
-            <div className="chatsearchbar" id="chatsearchbar">
+            </TemporaryDrawer>
+            
+           {/*Inserire searchbar*/}
+           <Searchbar name='Attività'/>
 
-            <Searchbar name='Chat' id="ba"/>
-
-            </div>
-            {/*aggiungi qui le modifiche all'appbar*/}
             <IconButton
               id="open-side-panel"
               color="inherit"
@@ -124,7 +105,7 @@ const ChatResponsiveAppBar = ({ name }) => {
               onClick={handleDrawerOpen}
               sx={{ ...(open && { display: 'none' }) }}
             ></IconButton>
-            <TemporaryChatDrawer  
+            <TemporaryDrawer  
               id="temporarydrawerright"
               type="mobile" 
             >
@@ -138,7 +119,7 @@ const ChatResponsiveAppBar = ({ name }) => {
               >
                 <MenuIcon />
               </IconButton>
-            </TemporaryChatDrawer>
+            </TemporaryDrawer>
             <AccountMenu type="mobile" />
           </Toolbar>
         </Container>
@@ -197,4 +178,4 @@ const ChatResponsiveAppBar = ({ name }) => {
   );
 };
 
-export default ChatResponsiveAppBar;
+export default Activityappbar;
