@@ -38,32 +38,18 @@
     color: var(--foreground-color) !important;
     background-color: transparent !important;
 
-    .css-1cafy48-MuiPickersSlideTransition-root-MuiDayCalendar-slideTransition>* {
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
+    .css-15v8kdh-MuiPickersFadeTransitionGroup-root-MuiDateCalendar-viewTransitionContainer { /* Riquadro dei giorni */
+        display: block;
+        position: relative;
         background-color: var(--secondary-color)!important;
+        border-radius: 10% !important;
+        margin-left: 5px !important;
     }
-    .css-i5q14k-MuiDayCalendar-header {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-align-items: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        background-color: var(--secondary-color)!important;
-    }
+
 }
 
 
-.css-1u23akw-MuiButtonBase-root-MuiPickersDay-root {
+.css-1u23akw-MuiButtonBase-root-MuiPickersDay-root { /* Gli altri giorni */
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
@@ -103,7 +89,7 @@
     letter-spacing: 0.03333em;
     width: 36px;
     height: 36px;
-    border-radius: 10% !important;
+    border-radius: 20% !important;
     padding: 0;
     background-color: var(--white);
     -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -111,7 +97,7 @@
     color: rgba(0, 0, 0, 0.87);
     margin: 0 2px;
 }
-.css-jgls56-MuiButtonBase-root-MuiPickersDay-root {
+.css-jgls56-MuiButtonBase-root-MuiPickersDay-root { /* Giorno attuale */
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
@@ -151,7 +137,7 @@
     letter-spacing: 0.03333em;
     width: 36px;
     height: 36px;
-    border-radius: 10% !important;
+    border-radius: 20% !important;
     padding: 0;
     background-color: transparent;
     -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;

@@ -95,7 +95,7 @@ const Activityappbar = ({ name }) => {
             </TemporaryDrawer>
             
            {/*Inserire searchbar*/}
-           <Searchbar/>
+           <Searchbar name='Attività'/>
 
             <IconButton
               id="open-side-panel"

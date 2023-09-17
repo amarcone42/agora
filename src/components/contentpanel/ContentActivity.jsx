@@ -48,75 +48,8 @@ export default function ContentActivity () {
      <BasicDateRangeCalendar/>
         
       </FormGroup>
-    <Divider className='divider'/>
-      <FormGroup>
-      <Typography className="title" > Preferiti </Typography>
-        <Stack direction="row" spacing="var(--spacing)" alignItems="center" className="custom-stack">
-          <Typography className="Typography">Lucia Maggi</Typography>
-          <Box className="customRating" spacing="var(--spacing)"><Rating defaultValue={1} max={1} /></Box>
-        </Stack>
-
-        <Stack direction="row" spacing="var(--spacing)" alignItems="center" className="custom-stack">
-          <Typography className="Typography">CatARTico</Typography>
-          <Box className="customRating" spacing="var(--spacing)"><Rating defaultValue={1} max={1} /></Box>
-        </Stack>
-
-        <Stack direction="row" spacing="var(--spacing)" alignItems="center" className="custom-stack">
-          <Typography className="Typography">Catai</Typography>
-          <Box className="customRating" spacing="var(--spacing)"><Rating defaultValue={1} max={1} /></Box>
-        </Stack>
-
-        <Stack direction="row" spacing="var(--spacing)" alignItems="center" className="custom-stack">
-          <Typography className="Typography">In Movimento</Typography>
-          <Box className="customRating" spacing="var(--spacing)"><Rating defaultValue={1} max={1} /></Box>
-        </Stack>
-
-        <Stack direction="row" spacing="var(--spacing)" alignItems="center" className="custom-stack">
-          <Typography className="Typography">Fidays for Future</Typography>
-          <Box className="customRating" spacing="var(--spacing)"><Rating defaultValue={1} max={1} /></Box>
-        </Stack>
-
-        <Stack direction="row" spacing="var(--spacing)" alignItems="center" className="custom-stack">
-          <Typography className="Typography">LGBTQ+ Community</Typography>
-          <Box className="customRating" spacing="var(--spacing)"><Rating defaultValue={1} max={1} /></Box>
-        </Stack>
-      </FormGroup>
-    <Divider className='divider'/>
-      <FormGroup>
-      <Typography className="title" > Iscrizioni </Typography>
-        <Stack direction="row" spacing="var(--spacing)" alignItems="center" className="custom-stack">
-          <Typography className="Typography">Arte moderna</Typography>
-          <Box className="customRating" spacing="var(--spacing)"><Rating defaultValue={0} max={1} /></Box>
-        </Stack>
-
-        <Stack direction="row" spacing="var(--spacing)" alignItems="center" className="custom-stack">
-          <Typography className="Typography">Passione giardinaggio</Typography>
-          <Box className="customRating" spacing="var(--spacing)"><Rating defaultValue={0} max={1} /></Box>
-        </Stack>
-
-        <Stack direction="row" spacing="var(--spacing)" alignItems="center" className="custom-stack">
-          <Typography className="Typography">ExOPG</Typography>
-          <Box className="customRating" spacing="var(--spacing)"><Rating defaultValue={0} max={1} /></Box>
-        </Stack>
-
-        <Stack direction="row" spacing="var(--spacing)" alignItems="center" className="custom-stack">
-          <Typography className="Typography">CineCatai</Typography>
-          <Box className="customRating" spacing="var(--spacing)"><Rating defaultValue={0} max={1} /></Box>
-        </Stack>
-
-        <Stack direction="row" spacing="var(--spacing)" alignItems="center" className="custom-stack">
-          <Typography className="Typography">Passione Cinema</Typography>
-          <Box className="customRating" spacing="var(--spacing)"><Rating defaultValue={0} max={1} /></Box>
-        </Stack>
-
-        <Stack direction="row" spacing="var(--spacing)" alignItems="center" className="custom-stack">
-          <Typography className="Typography">Marco Bianchi</Typography>
-          <Box className="customRating" spacing="var(--spacing)"><Rating defaultValue={0} max={1} /></Box>
-        </Stack>
-       </FormGroup>
-      <Divider />
-
-      <Stack   className="footer">
+    
+        <Stack   className="footer">
         <Link href="https://www.example.com" className="link-text" target="_blank">
           <Typography className="TypographyFooter">Termini di servizio</Typography>
         </Link>
