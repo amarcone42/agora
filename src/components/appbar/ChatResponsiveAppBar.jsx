@@ -29,7 +29,6 @@ import AccountMenu from '../account/AccountMenu';
 import Searchbar from '../searchbar/Searchbar';
 
 
-
 const drawerWidth = 240;
 const settings = ['Profilo utente', 'Crea gruppo', 'Impostazioni', 'Log out'];
 
@@ -112,7 +111,9 @@ const ChatResponsiveAppBar = ({ name }) => {
               {name}
             </Typography>
             <div className="chatsearchbar" id="chatsearchbar">
-            <Searchbar text='Cerca in chat'></Searchbar>
+
+            <Searchbar name='Chat' id="ba"/>
+
             </div>
             {/*aggiungi qui le modifiche all'appbar*/}
             <IconButton
