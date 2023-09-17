@@ -11,7 +11,7 @@ export default function Login() {
   return (
     <main id="login-page">
       <div id="company-section">
-        <img id="company-logo" src="agora-hires-logo.svg" alt="Agorà logo" />
+        <img id="company-logo" src="agora-logo-vertical-black.svg" alt="Agorà logo" />
       </div>
       <div id="account-section">
         <h1 className="xxl-text">La voce di tutti</h1>
