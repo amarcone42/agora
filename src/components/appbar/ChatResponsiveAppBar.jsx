@@ -114,7 +114,7 @@ const ChatResponsiveAppBar = ({ name }) => {
             <div className="chatsearchbar" id="chatsearchbar">
 
 
-            <Searchbar text='Cerca in chat'></Searchbar>
+            <Searchbar name='Chat' id="ba"/>
 
             
             </div>
