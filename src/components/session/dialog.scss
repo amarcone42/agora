@@ -1,10 +1,14 @@
 
 
 .dialog-card {
+    .text-custom-format{
+        background-color: var(--secondary-color)!important;
+    }
     .MuiPaper-root{
         border-radius: var(--border-radius-md);
         color: var(--foreground-color);
         background-color: var(--neutral-color);
+
         p {
             color: var(--foreground-color);
         }
@@ -13,6 +17,7 @@
         }
         input {
             color: var(--foreground-color);
+            caret-color: var(--accent-color);
         }
         .MuiInput-underline::before {
             border-bottom-color: var(--foreground-color);
@@ -23,8 +28,46 @@
         .MuiInputLabel-root.Mui-focused {
             color: var(--accent-color);
         }
-
+        .MuiInputBase-root{
+            .MuiInputBase-input {
+                color: var(--foreground-color);
+                caret-color: var(--accent-color);
+            }
+            fieldset {
+                border-color: var(--foreground-color);
+            }
+        }
+        .MuiFilledInput-root {
+            border-radius: var(--border-radius-md);
+            background-color: var(--secondary-color);
+        }
+        .MuiFilledInput-root::before {
+            border: 0;
+        }
+        .MuiFilledInput-root::after {
+            left: var(--border-radius-md);
+            right: var(--border-radius-md);
+            border-bottom: 2px solid var(--accent-color);
+        }
         
+        //radio buttons style
+        .MuiRadio-root {
+            color: var(--foreground-color);
+        }
+        .MuiRadio-root.Mui-checked {
+            color: var(--accent-color);
+        }
+        .MuiCheckbox-root {
+            color: var(--foreground-color);
+        }
+        .MuiCheckbox-root.Mui-checked {
+            color: var(--accent-color);
+        }
+
+        .MuiToggleButton-root.Mui-selected{
+            border-radius: var(--border-radius-md)!important;
+            background-color: var(--accent-color);
+        }
     }
 }
 

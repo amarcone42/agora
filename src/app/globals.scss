@@ -113,6 +113,16 @@ main {
   }
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
 //Modifiche per adattare lo stile del pulsante base al Material 3
 .MuiButtonBase-root {
   border-radius: 100px !important;
@@ -132,4 +142,13 @@ main {
 }
 .MuiButton-containedPrimary:hover {
   background-color: var(--accent-color);
+}
+
+.submit {
+  width: 100%;
+}
+@media (width > 600px) { 
+  .submit {
+    width: 150px;
+  }
 }
