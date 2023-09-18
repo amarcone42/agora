@@ -3,20 +3,31 @@ import { Card } from "../../lib/mui"
 import React from "react"
 import './post.scss'
 import IconButton from '@mui/material/IconButton';
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import ShareIcon from '@mui/icons-material/Share';
 import TurnedInNotIcon from '@mui/icons-material/TurnedInNot';
 import ImageIcon from '@mui/icons-material/Image';
-
+import { useState } from 'react';
 import EventIcon from '@mui/icons-material/Event';
 import Button from '@mui/material/Button';
-
 import NewspaperIcon from '@mui/icons-material/Newspaper';
 import LinkIcon from '@mui/icons-material/Link';
 import Link from '@mui/material/Link';
+import Checkbox from '@mui/material/Checkbox';
+import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
+import BookmarkIcon from '@mui/icons-material/Bookmark';
+import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
+import Favorite from "@mui/icons-material/Favorite";
 
 export default function Post  ({imageSrc, title, name, content, imgSrcContent, link, titleNews, nameEvent, date, type}) {
+    
+    const [checked, setChecked] = useState(false);
+    const [count, setCount] = useState(0);
+
+    const handleCheckboxChange = () => {
+        setChecked(!checked);
+        setCount(checked ? 0 : 1);
+      };
     
     const CustomIcon = ({ nameIcon: NameIcon }) => {
         return <NameIcon className="post-type"/>;
@@ -94,8 +105,15 @@ export default function Post  ({imageSrc, title, name, content, imgSrcContent, l
                 className="like" 
                 onClick={() => {// Gestisci il clic sull'icona qui
                 }}>
-                <FavoriteBorderIcon/>
-                <h5 className="zero">0</h5>
+                <Checkbox
+                    icon={<FavoriteBorder />}
+                    checkedIcon={<Favorite sx={{ color: "red" }} />}
+                    checked={checked}
+                    onChange={handleCheckboxChange}
+                />
+                    <div className="moveleft">
+                        <h5 className="zero">{count}</h5>
+                    </div>
              </IconButton>
              
              <IconButton
@@ -110,7 +128,7 @@ export default function Post  ({imageSrc, title, name, content, imgSrcContent, l
                 className="save" 
                 onClick={() => {// Gestisci il clic sull'icona qui
                 }}>
-                <TurnedInNotIcon/>
+                <Checkbox icon={<BookmarkBorderIcon />} checkedIcon={<BookmarkIcon />} />
              </IconButton>
 
              <IconButton
