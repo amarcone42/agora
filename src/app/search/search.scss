@@ -1,0 +1,41 @@
+@media (width > 600px) {
+    .bottom{
+        display: none !important;
+    }
+
+    #bottom{
+        display: none !important;
+    }
+
+    .bottom-navbar {
+        display: none !important;
+    }
+}
+@media (width > 1200px) {
+    .bottom-grouppo {
+        display: none !important;
+    }
+}
+
+.bottom-grouppo{
+    margin-bottom: 15px;
+    color: var(--foreground-color);
+    background: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+   
+
+    .botto{
+        margin-bottom: 15px;
+        margin-right: 35px;
+        padding: 10px;
+        border-radius: 50px;
+        width: 150%;
+        height: 100%;
+        background: var(--neutral-color-dark);
+        display: flex;
+    }
+    
+}
+

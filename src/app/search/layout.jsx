@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './search.scss';
 import { Open_Sans } from 'next/font/google';
 import MainPanel from '../../components/mainpanel/MainPanel';
 import SimpleBottomNavigation from '../../components/navbar/Navbar';
