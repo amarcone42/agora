@@ -63,7 +63,9 @@ export default function ContentHomepage () {
   return (
     <Box id='homepageContent'>
     <DrawerHeader>
+
     <Searchbar className="searchbar" name='Chat' type="chat"></Searchbar>
+
       </DrawerHeader>
       <Divider />
       
