@@ -52,12 +52,33 @@ const Search = styled('div')(({ theme }) => ({
     },
   }));
 
-  export default function Searchbar({ name }) {
+  export default function Searchbar({ name, type }) {
     const [value, setValue] = React.useState(0);
     const router = useRouter();
     const fullname = "Cerca in " + name;
   
+    let show = false; // variabile per controllare la visibilità dei pulsanti in activity
+    let shows = false; // variabile per controllare la visibilità del pulsante in cerca
+
+    
+    if(type ==="attivita")
+    {
+       show = true;
+       shows = false;
+    }
+    else if (type === "cerca")
+    {
+        show = false;
+        shows = true;
+    }
+    else if (type === "chat")
+    {
+        show = false;
+        shows = false;
+    }
+
     return (
+      
       <Toolbar>
         <Box sx={{ display: 'flex', flexGrow: 1 }} className='box'>
           
@@ -71,6 +92,8 @@ const Search = styled('div')(({ theme }) => ({
             />
           </Search>
           
+
+          {show &&
         <Box sx={{ marginLeft: 'auto' }}>
           <BottomNavigation
             showLabels
@@ -78,17 +101,15 @@ const Search = styled('div')(({ theme }) => ({
             onChange={(event, newValue) => {
               setValue(newValue);
             }}
-            className="bottom-groups"
-          >
+            className="bottom-groups">
+              
             <BottomNavigationAction
               label="Notifiche"
               className="search"
               style={{
                 backgroundColor: value === 0 ? '#FFDE18' : '#FFFFFF',
                 color: '#333234',
-              }}
-              
-            />
+              }}/>
   
             <BottomNavigationAction
               label="Salvati"
@@ -96,11 +117,34 @@ const Search = styled('div')(({ theme }) => ({
               style={{
                 backgroundColor: value === 1 ? '#FFDE18' : '#FFFFFF',
                 color: '#333234',
-              }}
-            />
+              }}/>
+            
           </BottomNavigation>
         </Box>
+        }
+
+        {shows &&
+        <Box sx={{ marginLeft: 'auto' }}>
+          <BottomNavigation
+            showLabels
+            value={value}
+            onChange={(event, newValue) => {
+              setValue(newValue);
+            }}
+            className="bottom-groups">
+
+            <BottomNavigationAction
+              label="Filtri"
+              className="search"
+              style={{
+                backgroundColor: value === 0 ? '#FFDE18' : '#FFFFFF',
+                color: '#333234',
+              }}/>
+ 
+          </BottomNavigation>
         </Box>
+        }
+      </Box>
       </Toolbar>
     );
   }

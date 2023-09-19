@@ -52,7 +52,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   justifyContent: 'flex-start',
 }));
 
-const Activityappbar = ({ name }) => {
+const SearchAppBar = ({ name }) => {
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
@@ -95,7 +95,7 @@ const Activityappbar = ({ name }) => {
             </TemporaryDrawer>
             
            {/*Inserire searchbar*/}
-           <Searchbar name='Attività' type="attivita"/>
+           <Searchbar name='Search' type="cerca"/>
 
             <IconButton
               id="open-side-panel"
@@ -180,4 +180,4 @@ const Activityappbar = ({ name }) => {
   );
 };
 
-export default Activityappbar;
+export default SearchAppBar;

@@ -110,11 +110,12 @@ const ChatResponsiveAppBar = ({ name }) => {
             >
               {name}
             </Typography>
+          {/*Pure se la cancelli, si vede, non si riesce a modificare*/}
             <div className="chatsearchbar" id="chatsearchbar">
 
-            <Searchbar name='Chat' id="ba"/>
+            <Searchbar name='Chat'/>
 
-            </div>
+        </div>
             {/*aggiungi qui le modifiche all'appbar*/}
             <IconButton
               id="open-side-panel"

@@ -4,13 +4,18 @@ import React from "react"
 import './notifica.scss'
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import CommentIcon from '@mui/icons-material/Comment';
+import BottomNavigationAction from '@mui/material/BottomNavigationAction';
+import BottomNavigation from '@mui/material/BottomNavigation';
 
 
 export default function Notifica  ({imageSrc, title, name, content, date, type}) {
-    
+    const [value, setValue] = React.useState(0);
     const CustomIcon = ({ nameIcon: NameIcon }) => {
         return <NameIcon className="post-type"/>;
       };
+
+      let showButton = false; // variabile per controllare la visibilità del pulsante iscriviti
+      let showButtone = false; // variabile per controllare la visibilità del pulsante aggiungi
 
     if(type ==="Like")
     {
@@ -18,6 +23,8 @@ export default function Notifica  ({imageSrc, title, name, content, date, type})
        var Follow = new String("hiden");
        var Info = new String("hiden");
        var typeIcon = FavoriteIcon;
+       showButton = false;
+       showButtone = false;
     }
     else if (type === "Commento")
     {
@@ -25,6 +32,26 @@ export default function Notifica  ({imageSrc, title, name, content, date, type})
         Follow = new String("follow");
         Info = new String("info-event");
         typeIcon = CommentIcon;
+        showButton = false;
+        showButtone = false;
+    }
+    else if (type === "Utente")
+    {
+        Avatar = new String("icona-profilo");
+        Follow = new String("follow");
+        Info = new String("info-event");
+        typeIcon = CommentIcon;
+        showButton = false;
+        showButtone = true;
+    }
+    else if (type === "Gruppo")
+    {
+        Avatar = new String("icona-profilo");
+        Follow = new String("follow");
+        Info = new String("info-event"); 
+        typeIcon = CommentIcon;
+        showButton = true;
+        showButtone = false;
     }
 
  return (
@@ -42,7 +69,9 @@ export default function Notifica  ({imageSrc, title, name, content, date, type})
                 </div>
             </div> 
             
+            {(type === "Like" || type === "Commento") &&
             <CustomIcon nameIcon={typeIcon} />
+            }
 
         </div>
 
@@ -53,6 +82,44 @@ export default function Notifica  ({imageSrc, title, name, content, date, type})
         <div className='content'>
             <p>{content}</p>
         </div>
+
+        {showButton && 
+        <BottomNavigation
+        showLabels
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+        className='bottom-group'
+      >
+        <BottomNavigationAction
+              label="Iscriviti"
+              className="searcha"
+              style={{
+                backgroundColor: value === 0 ? '#FFDE18' : 'trasparent',
+                color: '#333234',
+              }} />
+              </BottomNavigation>
+            }
+
+        {showButtone && 
+        <BottomNavigation
+        showLabels
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+        className='bottom-group'
+      >
+        <BottomNavigationAction
+              label="Aggiungi"
+              className="searcha"
+              style={{
+                backgroundColor: value === 0 ? '#FFDE18' : 'trasparent',
+                color: '#333234',
+              }} />
+              </BottomNavigation>
+            }
 
     </Card>
 )
