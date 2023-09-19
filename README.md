@@ -6,7 +6,7 @@
         Progetto IUM
         <br>
     </h1>
-    <h4 align="center">Progetto d'esame di Interazione Uomo-Macchina per il gruppo G13</h4>
+    <h4 align="center">Progetto d'esame di Interazione Uomo-Macchina per il gruppo 11</h4>
 </div>
 
 ## Scopo del sistema
