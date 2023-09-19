@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="240"
+   height="110"
+   viewBox="0 0 60.000004 27.5"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="agora-logo-horizontal-grey.png"
+   inkscape:export-xdpi="500"
+   inkscape:export-ydpi="500"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="agora-logo-horizontal-black.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="4.1172106"
+     inkscape:cx="98.489011"
+     inkscape:cy="48.455136"
+     inkscape:window-width="1920"
+     inkscape:window-height="1094"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g19">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="-7.8317242e-10"
+       spacingx="0.26458333"
+       spacingy="0.26458333"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <rect
+       x="10"
+       y="90"
+       width="110.69336"
+       height="51.843609"
+       id="rect1" />
+  </defs>
+  <g
+     inkscape:label="Livello 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g3"
+       inkscape:label="Semicerchio C"
+       style="display:none;fill:none">
+      <g
+         id="g7"
+         style="display:none;fill:none"
+         inkscape:label="modelli">
+        <path
+           id="path2"
+           style="display:inline;fill:none;fill-opacity:1;stroke-width:0.885827"
+           d="M 32.197916,16.322916 C 32.622598,26.6022 20.791966,34.507175 11.457665,30.181109 1.798326,26.639752 -0.97753221,12.68457 6.5913143,5.7163143 13.185602,-1.4654461 26.05273,0.58046039 30.363101,9.1341812 c 1.200387,2.1928048 1.83747,4.6888688 1.834815,7.1887348 z" />
+        <path
+           id="path1"
+           style="fill:none;fill-opacity:1;stroke-width:0.885827"
+           d="M 16.739547,1.3497884 C 12.984376,1.4038858 9.2702556,2.7988597 6.5913289,5.7164469 1.9119396,10.024525 1.1906213,17.001383 3.6013306,22.538676 H 30.909741 c 0.899424,-1.896264 1.379828,-4.000081 1.288294,-6.215641 0.0027,-2.499864 -0.634645,-4.995906 -1.83503,-7.1887088 C 27.803724,4.0555595 22.227874,1.270723 16.739547,1.3497884 Z" />
+        <path
+           id="path3"
+           style="fill:none;fill-opacity:1;stroke-width:0.469606"
+           d="m 25.164913,16.344654 c 0.225138,5.449385 -6.046667,9.640071 -10.995085,7.346682 -5.1207313,-1.87739 -6.5923046,-9.275488 -2.579812,-12.969588 3.495847,-3.807287 10.317133,-2.7226852 12.602202,1.811923 0.636364,1.162477 0.974102,2.485722 0.972695,3.810983 z" />
+        <rect
+           style="display:none;fill:none;fill-opacity:1;stroke-width:1.36507"
+           id="rect5-2"
+           width="15.874999"
+           height="4.9302211"
+           x="9.260416"
+           y="26.458332"
+           sodipodi:insensitive="true" />
+      </g>
+      <path
+         id="path7"
+         style="display:inline;fill:none;fill-opacity:0.400394;stroke:#000000;stroke-width:1.5;stroke-dasharray:none;stroke-opacity:1"
+         d="M 16.739547,1.3497884 C 12.984379,1.4038858 9.270253,2.7988627 6.5913289,5.7164469 1.9119443,10.024521 1.1906237,17.001388 3.6013306,22.538676 H 12.164632 C 8.7383421,19.725399 8.164609,13.875402 11.58999,10.721826 c 3.495844,-3.807283 10.317265,-2.7228278 12.602332,1.811776 0.636363,1.162476 0.973957,2.485877 0.97255,3.811137 0.103183,2.4975 -1.160097,4.728237 -3.033406,6.193937 h 8.778275 c 0.899423,-1.896262 1.379828,-4.000084 1.288294,-6.215641 0.0027,-2.499862 -0.634647,-4.995908 -1.83503,-7.1887088 C 27.803726,4.0555646 22.227868,1.2707231 16.739547,1.3497884 Z"
+         inkscape:label="spalti" />
+      <path
+         id="path6"
+         style="display:none;fill:none;fill-opacity:1;stroke-width:0.885827"
+         d="m 7.9375,26.458333 v 1.758549 c 1.0440149,0.814032 2.217156,1.486493 3.520199,1.964222 1.746224,0.809303 3.579948,1.189952 5.404321,1.207678 h 0.03411 c 3.439206,0.02487 6.839965,-1.244346 9.562207,-3.36827 v -1.562179 z"
+         inkscape:label="palco1"
+         sodipodi:insensitive="true" />
+      <path
+         id="rect6"
+         style="display:inline;fill:none;fill-opacity:0.4;stroke:#000000;stroke-width:1.5;stroke-dasharray:none;stroke-opacity:1"
+         d="m 5.0374186,25.135417 c 1.5494551,2.243977 3.7143698,4.053632 6.4202804,5.045687 1.746224,0.809303 3.579948,1.189952 5.404321,1.207678 h 0.03411 c 4.79543,0.03468 9.518696,-2.441903 12.424048,-6.253365 z"
+         inkscape:label="palco2" />
+    </g>
+    <g
+       id="g5"
+       inkscape:label="Semicerchio teatro"
+       style="display:none"
+       inkscape:export-filename="logo-teatro.png"
+       inkscape:export-xdpi="225"
+       inkscape:export-ydpi="225">
+      <path
+         id="path5"
+         style="display:none;fill:#e0e78d;fill-opacity:1;stroke-width:0.885827"
+         d="M 32.197916,16.322916 C 32.622598,26.6022 20.791966,34.507175 11.457665,30.181109 1.798326,26.639752 -0.97753221,12.68457 6.5913143,5.7163143 13.185602,-1.4654461 26.05273,0.58046039 30.363101,9.1341812 c 1.200387,2.1928048 1.83747,4.6888688 1.834815,7.1887348 z" />
+      <path
+         id="path4"
+         style="fill:#f5ff3c;fill-opacity:1;stroke:none;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+         d="M 16.739547,6.641455 C 12.984376,6.6955524 9.2702556,8.0905263 6.5913289,11.008113 3.5506589,13.807505 2.1827066,17.73425 2.2567098,21.660694 H 32.198035 c -5.83e-4,-0.01544 6.38e-4,-0.03055 0,-0.04599 0.0027,-2.499864 -0.634645,-4.995906 -1.83503,-7.188709 C 27.803724,9.3472261 22.227874,6.5623896 16.739547,6.641455 Z"
+         inkscape:label="spalti" />
+      <rect
+         style="fill:#f5ff3c;fill-opacity:1;stroke:none;stroke-width:1;stroke-opacity:1"
+         id="rect5"
+         width="10.583333"
+         height="3.9687498"
+         x="11.90625"
+         y="23.8125"
+         inkscape:label="palco" />
+    </g>
+    <g
+       id="g19"
+       inkscape:label="Semicerchio doppio"
+       style="display:inline"
+       transform="translate(0,0.50410378)">
+      <g
+         id="g14"
+         style="display:none"
+         inkscape:label="modelli">
+        <circle
+           style="fill:#f5ff3c;fill-opacity:1;stroke:none;stroke-width:0.885835;stroke-dasharray:none;stroke-opacity:1"
+           id="path8"
+           cx="16.933332"
+           cy="16.933332"
+           r="15" />
+        <circle
+           style="fill:#3c4eff;fill-opacity:1;stroke:none;stroke-width:0.620085;stroke-dasharray:none;stroke-opacity:1"
+           id="circle8"
+           cx="16.933332"
+           cy="16.933332"
+           r="10.5" />
+        <circle
+           style="fill:#ff913c;fill-opacity:1;stroke:none;stroke-width:0.561029;stroke-dasharray:none;stroke-opacity:1"
+           id="circle9"
+           cx="16.933332"
+           cy="16.933332"
+           r="9.5" />
+        <circle
+           style="fill:#ff3c3c;fill-opacity:1;stroke:none;stroke-width:0.236222;stroke-dasharray:none;stroke-opacity:1"
+           id="circle10"
+           cx="16.933332"
+           cy="16.933332"
+           r="4" />
+        <path
+           id="path15"
+           style="display:inline;fill:#4e3cff;fill-opacity:1;stroke:none;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+           inkscape:transform-center-y="-1.5992077"
+           d="M -4.3301274e-7,21.166596 -10.998524,40.216667 V 54.924866 H 10.998523 V 40.216667 Z"
+           transform="matrix(1.5396006,0,0,0.50368734,16.933334,6.2017066)" />
+        <path
+           id="path16"
+           style="display:inline;fill:#3cffe2;fill-opacity:1;stroke:none;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+           inkscape:transform-center-y="-0.496777"
+           d="M -3.2224205e-7,21.166445 -10.998524,40.216669 V 131.78854 H 10.998524 V 40.216669 Z"
+           transform="matrix(2.0688382,0,0,0.15646517,16.933334,13.551242)" />
+        <path
+           sodipodi:type="star"
+           style="display:none;fill:#ff3c3c;fill-opacity:1;stroke:none;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+           id="path14"
+           inkscape:flatsided="true"
+           sodipodi:sides="3"
+           sodipodi:cx="0"
+           sodipodi:cy="33.866665"
+           sodipodi:r1="12.700001"
+           sodipodi:r2="6.3500004"
+           sodipodi:arg1="-1.5707963"
+           sodipodi:arg2="-0.52359878"
+           inkscape:rounded="0"
+           inkscape:randomized="0"
+           d="M 3.4029521e-7,21.166664 10.998523,40.216666 l -21.997046,-10e-7 z"
+           inkscape:transform-center-y="-2.83393"
+           transform="matrix(1.5396006,0,0,0.89257624,16.933334,-2.0297739)" />
+        <path
+           id="circle13"
+           style="display:none;fill:#ff913c;fill-opacity:1;stroke:none;stroke-width:0.561029;stroke-dasharray:none;stroke-opacity:1"
+           d="m 16.933333,7.433138 a 9.5,9.5 0 0 0 -9.500195,9.500195 9.5,9.5 0 0 0 1.2252482,4.61884 L 13.43949,18.842778 a 4,4 0 0 1 -0.505913,-1.909445 4,4 0 0 1 3.999756,-3.999756 4,4 0 0 1 3.999756,3.999756 4,4 0 0 1 -0.505912,1.909445 l 4.79919,2.71973 a 9.5,9.5 0 0 0 1.207162,-4.629175 9.5,9.5 0 0 0 -9.500196,-9.500195 z" />
+        <path
+           id="circle11"
+           style="display:none;fill:#f5ff3c;fill-opacity:1;stroke:none;stroke-width:0.885835;stroke-dasharray:none;stroke-opacity:1"
+           d="M 16.933333,1.9332153 A 15,15 0 0 0 1.9332153,16.933333 15,15 0 0 0 2.0670573,18.810221 L 6.5463704,18.223694 A 10.5,10.5 0 0 1 6.4331991,16.933333 10.5,10.5 0 0 1 16.933333,6.4331991 10.5,10.5 0 0 1 27.433468,16.933333 a 10.5,10.5 0 0 1 -0.08165,1.294495 l 4.459159,0.583944 A 15,15 0 0 0 31.933451,16.933333 15,15 0 0 0 16.933333,1.9332153 Z" />
+      </g>
+      <path
+         id="path18"
+         style="fill:#333234;fill-opacity:1;stroke:none;stroke-width:0.561029;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:label="logo-doppio-semicerchio"
+         d="M 16.958135,2.3128834 A 15,15 0 0 0 1.9580183,17.313002 15,15 0 0 0 2.0918603,19.18989 L 6.5711734,18.603879 A 10.5,10.5 0 0 1 6.4580021,17.313002 10.5,10.5 0 0 1 16.958135,6.8133837 10.5,10.5 0 0 1 27.45827,17.313002 10.5,10.5 0 0 1 27.37662,18.608013 l 4.459159,0.583944 A 15,15 0 0 0 31.958253,17.313002 15,15 0 0 0 16.958135,2.3128834 Z m 0,5.5004394 a 9.5,9.5 0 0 0 -9.500194,9.4996792 9.5,9.5 0 0 0 1.2252482,4.619356 l 4.7811028,-2.709395 a 4,4 0 0 1 -0.505913,-1.909961 4,4 0 0 1 3.999756,-3.999756 4,4 0 0 1 3.999756,3.999756 4,4 0 0 1 -0.505912,1.909961 l 4.79919,2.71973 a 9.5,9.5 0 0 0 1.207162,-4.629691 9.5,9.5 0 0 0 -9.500196,-9.4996792 z"
+         inkscape:export-filename="..\logo_lookup\agora-logo-horizontal-black.svg"
+         inkscape:export-xdpi="24"
+         inkscape:export-ydpi="24" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,32.358228,-16.798611)"
+         id="text1"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:32px;font-family:roboto;-inkscape-font-specification:'roboto Bold';white-space:pre;shape-inside:url(#rect1);display:inline;fill:#333234;fill-opacity:1;stroke-width:5.66929"><tspan
+           x="10"
+           y="118"
+           id="tspan2">Agorà</tspan></text>
+    </g>
+  </g>
+</svg>
