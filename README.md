@@ -16,6 +16,10 @@ Il progetto si è sviluppato a partire dal tema delle “Engaging Community e In
 
 Abbiamo scelto di realizzare il sistema come progetto [Next.js](https://nextjs.org/).
 
+## Video Dimostrativo
+
+[![Watch the video](https://img.youtube.com/vi/C7u-D-xHADw/maxresdefault.jpg)](https://youtu.be/C7u-D-xHADw)
+
 ## Autori
 
 ### Team Members
